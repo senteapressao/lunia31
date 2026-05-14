@@ -1,0 +1,761 @@
+[  Info   ] (2023-08-21 20:40:38)[19284] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-21 20:40:38)[19284] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-21 20:40:38)[19112] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-21 20:40:38)[23960] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-21 20:40:38)[19284] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-21 20:40:38)[19284] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-21 20:40:38)[19284] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 13:17:58)[28280] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 13:17:58)[28280] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 13:17:58)[01320] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 13:17:58)[27816] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 13:17:58)[28280] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 13:17:58)[28280] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 13:17:58)[28280] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 13:28:20)[15996] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 13:28:20)[15996] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 13:28:20)[22872] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 13:28:20)[15544] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 13:28:20)[15996] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 13:28:20)[15996] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 13:28:20)[15996] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 14:42:52)[24216] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 14:42:52)[24216] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 14:42:52)[28456] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 14:42:52)[10764] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 14:42:52)[24216] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 14:42:52)[24216] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 14:42:52)[24216] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 17:57:12)[24412] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:57:12)[24412] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:57:12)[26016] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:57:12)[04552] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:57:12)[24412] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 17:57:12)[24412] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 17:57:12)[24412] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 17:58:18)[13204] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:18)[13204] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:18)[16664] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:18)[07980] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:18)[13204] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 17:58:18)[13204] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 17:58:18)[03136] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:18)[03136] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:18)[17128] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:18)[13240] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:18)[03136] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 17:58:18)[03136] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 17:58:18)[26976] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:18)[26976] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:18)[23448] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:18)[02328] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:18)[26976] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 17:58:18)[26976] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 17:58:18)[26268] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:18)[26268] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:18)[25692] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:18)[08528] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:18)[26268] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 17:58:18)[26268] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 17:58:19)[12176] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:19)[12176] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:19)[16084] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:19)[21620] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:19)[12176] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 17:58:19)[12176] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 17:58:19)[26140] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:19)[26140] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:19)[07656] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:19)[26532] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:19)[26140] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 17:58:19)[26140] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 17:58:26)[25480] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 17:58:26)[25480] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 17:58:26)[23020] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 17:58:26)[23856] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 17:58:26)[25480] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 17:58:26)[25480] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 17:58:26)[25480] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 18:00:54)[27160] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:00:54)[27160] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:00:54)[16828] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:00:54)[24932] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:00:54)[27160] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 18:00:54)[27160] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 18:00:55)[27012] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:00:55)[27012] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:00:55)[26928] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:00:55)[16576] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:00:55)[27012] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 18:00:55)[27012] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 18:00:55)[09836] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:00:55)[09836] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:00:55)[26764] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:00:55)[25924] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:00:55)[09836] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 18:00:55)[09836] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 18:00:55)[07280] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:00:55)[07280] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:00:55)[16060] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:00:55)[23380] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:00:55)[07280] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 18:00:55)[07280] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 18:00:56)[10612] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:00:56)[10612] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:00:56)[26776] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:00:56)[25580] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:00:56)[10612] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-22 18:00:56)[10612] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-22 18:01:05)[27320] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:01:05)[27320] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:01:05)[09732] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:01:05)[18488] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:01:05)[27320] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 18:01:05)[27320] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 18:01:05)[27320] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-22 18:04:53)[16732] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-22 18:04:53)[16732] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-22 18:04:53)[16944] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-22 18:04:53)[16944] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-22 18:04:53)[16732] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-22 18:04:53)[16732] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-22 18:04:53)[16732] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 13:39:27)[02608] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:39:27)[02608] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:39:27)[01932] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:39:27)[19944] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:39:27)[02608] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 13:39:27)[02608] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 13:39:27)[02608] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 13:42:36)[17576] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:42:36)[17576] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:42:36)[18276] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:42:36)[01356] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:42:36)[17576] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 13:42:36)[17576] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 13:42:36)[17576] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 13:45:19)[20460] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:19)[20460] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:19)[08656] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:19)[25508] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:19)[20460] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:19)[20460] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:45:19)[04340] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:19)[04340] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:19)[03828] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:19)[12424] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:19)[04340] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:19)[04340] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:45:20)[22956] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:20)[22956] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:20)[09036] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:20)[18264] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:20)[22956] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:20)[22956] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:45:20)[15616] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:20)[15616] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:20)[18444] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:20)[17816] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:20)[15616] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:20)[15616] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:45:21)[19200] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:21)[19200] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:21)[20004] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:21)[18912] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:21)[19200] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:21)[19200] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:45:21)[01440] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:21)[01440] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:21)[25068] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:21)[15604] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:21)[01440] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:21)[01440] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:45:21)[15780] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:45:21)[15780] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:45:21)[09080] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:45:21)[01132] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:45:21)[15780] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-23 13:45:21)[15780] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-23 13:46:51)[11728] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:46:51)[11728] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:46:51)[04832] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:46:51)[13436] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:46:51)[11728] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 13:46:51)[11728] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 13:46:51)[11728] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 13:50:16)[11136] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:50:16)[11136] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:50:16)[03388] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:50:16)[25540] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:50:16)[11136] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 13:50:16)[11136] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 13:50:16)[11136] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 13:52:23)[10308] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 13:52:23)[10308] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 13:52:23)[12588] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 13:52:23)[14080] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 13:52:23)[10308] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 13:52:23)[10308] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 13:52:23)[10308] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 22:40:18)[13480] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 22:40:18)[13480] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 22:40:18)[03524] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 22:40:18)[24660] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 22:40:18)[13480] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 22:40:18)[13480] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 22:40:18)[13480] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-23 22:41:56)[27044] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-23 22:41:56)[27044] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-23 22:41:56)[08728] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-23 22:41:56)[26480] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-23 22:41:56)[27044] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-23 22:41:56)[27044] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-23 22:41:56)[27044] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-24 02:50:21)[25684] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-24 02:50:21)[25684] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-24 02:50:21)[08336] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-24 02:50:21)[12196] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-24 02:50:21)[25684] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-24 02:50:21)[25684] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-24 02:50:21)[25684] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-24 09:39:32)[24076] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-24 09:39:32)[24076] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-24 09:39:32)[01172] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-24 09:39:32)[14716] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-24 09:39:32)[24076] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-24 09:39:32)[24076] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-24 09:39:32)[24076] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-24 09:42:02)[24944] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-24 09:42:02)[24944] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-24 09:42:02)[28724] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-24 09:42:02)[13824] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-24 09:42:02)[24944] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-24 09:42:02)[24944] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-24 09:42:02)[24944] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-24 09:44:09)[07100] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-24 09:44:09)[07100] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-24 09:44:09)[11684] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-24 09:44:09)[26380] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-24 09:44:09)[07100] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-24 09:44:09)[07100] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-24 09:44:09)[07100] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:21:26)[25576] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:21:26)[25576] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:21:26)[28312] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:21:26)[27948] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:21:26)[25576] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:21:26)[25576] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:21:26)[25576] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:22:01)[18420] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:22:01)[18420] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:22:01)[30236] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:22:01)[25212] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:22:01)[18420] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:22:01)[18420] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:22:01)[18420] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:23:52)[19256] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:23:52)[19256] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:23:52)[12924] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:23:52)[31296] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:23:52)[19256] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:23:52)[19256] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:23:52)[19256] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:28:49)[27060] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:28:49)[27060] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:28:49)[20840] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:28:49)[30796] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:28:49)[27060] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:28:49)[27060] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:28:49)[27060] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:35:35)[07040] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:35:35)[07040] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:35:35)[15104] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:35:35)[00244] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:35:35)[07040] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:35:35)[07040] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:35:35)[07040] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:37:15)[27144] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:15)[27144] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:15)[18868] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:15)[09084] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:15)[27144] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:15)[27144] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:16)[17572] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:16)[17572] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:16)[13628] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:16)[14844] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:16)[17572] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:16)[17572] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:16)[06588] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:16)[06588] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:16)[20872] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:16)[26756] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:16)[06588] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:16)[06588] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:16)[19732] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:16)[19732] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:16)[08448] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:16)[13832] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:16)[19732] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:16)[19732] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:17)[22512] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:17)[22512] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:17)[16980] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:17)[23064] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:17)[22512] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:17)[22512] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:17)[16928] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:17)[16928] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:17)[09188] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:17)[03876] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:17)[16928] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:17)[16928] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:17)[21268] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:17)[21268] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:17)[08216] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:17)[16356] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:17)[21268] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-25 01:37:17)[21268] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-25 01:37:20)[15236] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:37:20)[15236] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:37:20)[31108] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:37:20)[24824] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:37:20)[15236] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:37:20)[15236] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:37:20)[15236] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:42:27)[13268] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:42:27)[13268] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:42:27)[04056] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:42:27)[16252] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:42:27)[13268] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:42:27)[13268] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:42:27)[13268] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 01:49:05)[04776] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 01:49:05)[04776] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 01:49:05)[06748] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 01:49:05)[04840] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 01:49:05)[04776] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 01:49:05)[04776] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 01:49:05)[04776] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 04:21:11)[24208] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 04:21:11)[24208] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 04:21:11)[23288] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 04:21:11)[23744] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 04:21:11)[24208] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 04:21:11)[24208] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 04:21:11)[24208] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 04:28:19)[04476] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 04:28:19)[04476] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 04:28:19)[17344] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 04:28:19)[24148] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 04:28:19)[04476] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 04:28:19)[04476] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 04:28:19)[04476] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 04:36:53)[19844] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 04:36:53)[19844] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 04:36:53)[23744] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 04:36:53)[20596] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 04:36:53)[19844] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 04:36:53)[19844] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 04:36:53)[19844] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-25 10:58:27)[25512] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-25 10:58:27)[25512] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-25 10:58:27)[25524] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-25 10:58:27)[25528] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-25 10:58:27)[25512] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-25 10:58:27)[25512] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-25 10:58:27)[25512] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 13:25:26)[29732] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 13:25:26)[25620] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 13:25:26)[26560] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 13:25:26)[29732] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 13:25:26)[29732] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 13:25:26)[29732] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 13:25:26)[29732] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 16:34:38)[21088] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 16:34:38)[21088] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 16:34:38)[23100] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 16:34:38)[23200] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 16:34:38)[21088] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 16:34:38)[21088] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 16:34:38)[21088] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:17:30)[22504] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:17:30)[22504] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:17:30)[00468] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:17:30)[25476] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:17:30)[22504] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:17:30)[22504] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:17:30)[22504] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:23:27)[25592] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:23:27)[25592] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:23:27)[17392] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:23:27)[23184] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:23:27)[25592] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:23:27)[25592] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:23:27)[25592] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:31:55)[07460] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:31:55)[07460] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:31:55)[17904] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:31:55)[19388] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:31:55)[07460] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:31:55)[07460] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:31:55)[07460] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:32:25)[08644] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:32:25)[08644] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:32:25)[17180] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:32:25)[02612] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:32:25)[08644] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:32:25)[08644] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:32:25)[08644] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:33:39)[02036] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:39)[02036] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:39)[24696] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:39)[23584] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:39)[02036] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:39)[02036] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:39)[02992] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:39)[02992] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:39)[09976] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:39)[13496] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:39)[02992] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:39)[02992] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:39)[22332] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:39)[22332] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:39)[21268] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:39)[21660] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:39)[22332] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:39)[22332] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:39)[20316] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:39)[20316] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:39)[19816] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:39)[20172] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:39)[20316] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:39)[20316] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:40)[12124] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:40)[12124] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:40)[23236] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:40)[10004] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:40)[12124] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:40)[12124] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:40)[23468] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:40)[23468] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:40)[21988] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:40)[24820] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:40)[23468] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:40)[23468] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:40)[19440] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:40)[19440] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:40)[20140] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:40)[21732] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:40)[19440] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:40)[19440] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:33:41)[02896] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:33:41)[02896] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:33:41)[07400] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:33:41)[05004] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:33:41)[02896] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[Critical ] (2023-08-27 17:33:41)[02896] unable to bind socket __at__ C:\luniaallm\AllM\SNet\SNet.cpp:252
+[  Info   ] (2023-08-27 17:34:08)[22076] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:34:08)[22076] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:34:08)[23608] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:34:08)[23076] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:34:08)[22076] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:34:08)[22076] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:34:08)[22076] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:47:07)[16860] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:47:07)[16860] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:47:07)[13372] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:47:07)[25236] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:47:07)[16860] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:47:07)[16860] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:47:07)[16860] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 17:59:55)[14760] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 17:59:55)[14760] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 17:59:55)[22368] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 17:59:55)[01560] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 17:59:55)[14760] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 17:59:55)[14760] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 17:59:55)[14760] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 18:12:18)[22944] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 18:12:18)[22944] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 18:12:18)[19380] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 18:12:18)[08560] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 18:12:18)[22944] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 18:12:18)[22944] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 18:12:18)[22944] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 18:14:33)[19380] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 18:14:33)[19380] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 18:14:33)[24048] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 18:14:33)[19944] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 18:14:33)[19380] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 18:14:33)[19380] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 18:14:33)[19380] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-27 19:57:30)[23468] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-27 19:57:30)[23468] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-27 19:57:30)[12104] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-27 19:57:30)[07084] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-27 19:57:30)[23468] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-27 19:57:30)[23468] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-27 19:57:30)[23468] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-29 20:45:42)[31248] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-29 20:45:42)[31248] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-29 20:45:42)[27816] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-29 20:45:42)[18616] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-29 20:45:42)[31248] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-29 20:45:42)[31248] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-29 20:45:42)[31248] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-29 21:28:48)[26660] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-29 21:28:48)[26660] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-29 21:28:48)[09484] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-29 21:28:48)[07672] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-29 21:28:48)[26660] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-29 21:28:48)[26660] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-29 21:28:48)[26660] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-08-29 23:21:16)[14652] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-08-29 23:21:16)[14652] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-08-29 23:21:16)[19208] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-08-29 23:21:16)[31548] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-08-29 23:21:16)[14652] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-08-29 23:21:16)[14652] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-08-29 23:21:16)[14652] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-09-12 22:02:10)[27756] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-09-12 22:02:10)[27756] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-09-12 22:02:10)[09428] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-09-12 22:02:10)[22588] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-09-12 22:02:10)[27756] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-09-12 22:02:10)[27756] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-09-12 22:02:10)[27756] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-09-12 23:41:12)[31552] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-09-12 23:41:12)[31552] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-09-12 23:41:12)[28628] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-09-12 23:41:12)[16636] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-09-12 23:41:12)[31552] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-09-12 23:41:12)[31552] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-09-12 23:41:12)[31552] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2023-12-05 20:28:31)[383936] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2023-12-05 20:28:31)[383936] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2023-12-05 20:28:31)[381104] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2023-12-05 20:28:31)[363400] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2023-12-05 20:28:31)[383936] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2023-12-05 20:28:31)[383936] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2023-12-05 20:28:31)[383936] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2024-02-22 01:21:09)[75120] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2024-02-22 01:21:09)[75120] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2024-02-22 01:21:09)[92392] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2024-02-22 01:21:09)[70568] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2024-02-22 01:21:09)[75120] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2024-02-22 01:21:09)[75120] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2024-02-22 01:21:09)[75120] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2024-02-25 18:50:35)[27440] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2024-02-25 18:50:35)[27440] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2024-02-25 18:50:35)[38884] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2024-02-25 18:50:35)[32964] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2024-02-25 18:50:35)[27440] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2024-02-25 18:50:35)[27440] 12 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2024-02-25 18:50:35)[27440] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 07:10:01)[29252] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 07:10:01)[29252] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 07:10:01)[30152] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 07:10:01)[48616] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 07:10:01)[29252] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 07:10:01)[29252] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 07:10:01)[29252] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 07:26:28)[12884] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 07:26:28)[12884] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 07:26:28)[10600] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 07:26:28)[21836] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 07:26:28)[12884] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 07:26:28)[12884] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 07:26:28)[12884] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 07:46:41)[06140] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 07:46:41)[06140] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 07:46:41)[14540] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 07:46:41)[32200] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 07:46:41)[06140] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 07:46:41)[06140] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 07:46:41)[06140] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 08:10:12)[49940] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 08:10:12)[49940] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 08:10:12)[37116] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 08:10:12)[34048] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 08:10:12)[49940] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 08:10:12)[49940] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 08:10:12)[49940] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 09:15:19)[31620] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 09:15:19)[31620] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 09:15:19)[41028] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 09:15:19)[17984] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 09:15:19)[31620] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 09:15:19)[31620] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 09:15:19)[31620] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 09:23:53)[31292] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 09:23:53)[31292] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 09:23:53)[56480] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 09:23:53)[51308] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 09:23:53)[31292] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 09:23:53)[31292] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 09:23:53)[31292] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 09:54:23)[44688] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 09:54:23)[44688] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 09:54:23)[42652] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 09:54:23)[18220] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 09:54:23)[44688] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 09:54:23)[44688] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 09:54:23)[44688] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 10:05:47)[48856] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 10:05:47)[48856] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 10:05:47)[10024] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 10:05:47)[10024] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 10:05:47)[48856] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 10:05:47)[48856] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 10:05:47)[48856] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 10:51:31)[16776] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 10:51:31)[16776] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 10:51:31)[20536] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 10:51:31)[33144] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 10:51:31)[16776] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 10:51:31)[16776] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 10:51:31)[16776] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 10:51:36)[24504] connection(25.15.180.67:47328) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 10:51:36)[49916] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[  Info   ] (2026-05-05 10:53:01)[24504] Ping sended. [167744765/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 10:53:01)[49916] Ping arrived. [LobbyCA/167744765/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 10:54:31)[24504] Ping sended. [167834765/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 10:54:31)[49916] Ping arrived. [LobbyCA/167834765/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 10:56:01)[24504] Ping sended. [167924781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 10:56:01)[49916] Ping arrived. [LobbyCA/167924781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 10:57:31)[24504] Ping sended. [168014781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 10:57:31)[49916] Ping arrived. [LobbyCA/168014781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 10:59:00)[24504] Ping sended. [168104781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 10:59:00)[49916] Ping arrived. [LobbyCA/168104781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:00:30)[24504] Ping sended. [168194781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:00:30)[49916] Ping arrived. [LobbyCA/168194781/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:02:00)[24504] Ping sended. [168284796/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:02:00)[49916] Ping arrived. [LobbyCA/168284796/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[ Warning ] (2026-05-05 11:03:14)[49916] OnClose : Try to disconnect. [0000018D94240910/0000000000000330/0] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:221
+[ Warning ] (2026-05-05 11:03:14)[49916] post disconnect message.[0000018D94240910/FFFFFFFFFFFFFFFF/1] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:273
+[ Warning ] (2026-05-05 11:03:14)[42396] Release Connection. [0000018D94240910] __at__ C:\luniaallm\AllM\SNet\SNet.cpp:267
+[  Error  ] (2026-05-05 11:03:14)[42396] connection(25.15.180.67:47328) is closed (hostname:LobbyCA) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:139
+[  Info   ] (2026-05-05 11:03:14)[42396] LobbyCA is disconnected from control server __at__ C:\luniaallm\AllM\XRATED\Service\Control\Server.cpp:259
+[  Info   ] (2026-05-05 11:03:14)[24504] connection(25.15.180.67:15325) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 11:03:14)[42396] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[  Info   ] (2026-05-05 11:03:30)[24504] Ping sended. [168374812/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:03:30)[42396] Ping arrived. [LobbyCA/168374812/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:05:00)[24504] Ping sended. [168464812/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:05:00)[42396] Ping arrived. [LobbyCA/168464812/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:09:19)[24012] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 11:09:19)[24012] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 11:09:19)[23528] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 11:09:19)[36964] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 11:09:19)[24012] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 11:09:19)[24012] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 11:09:19)[24012] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 11:09:26)[41600] connection(25.15.180.67:28658) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 11:09:26)[48704] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[  Info   ] (2026-05-05 11:10:49)[41600] Ping sended. [168813906/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:10:49)[48704] Ping arrived. [LobbyCA/168813906/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:12:19)[41600] Ping sended. [168903906/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:12:19)[48704] Ping arrived. [LobbyCA/168903906/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:13:49)[41600] Ping sended. [168993906/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:13:49)[48704] Ping arrived. [LobbyCA/168993906/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:15:19)[41600] Ping sended. [169083921/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:15:19)[48704] Ping arrived. [LobbyCA/169083921/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:16:49)[41600] Ping sended. [169173937/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:16:49)[48704] Ping arrived. [LobbyCA/169173937/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:18:19)[41600] Ping sended. [169263953/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:18:19)[48704] Ping arrived. [LobbyCA/169263953/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:19:49)[41600] Ping sended. [169353953/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:19:49)[48704] Ping arrived. [LobbyCA/169353953/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:21:19)[41600] Ping sended. [169443968/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 11:21:19)[48704] Ping arrived. [LobbyCA/169443968/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 11:56:12)[27916] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 11:56:12)[27916] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 11:56:12)[10048] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 11:56:12)[12312] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 11:56:12)[27916] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 11:56:12)[27916] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 11:56:12)[27916] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 11:56:19)[22184] connection(127.0.0.1:5105) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 11:56:19)[39904] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[ Warning ] (2026-05-05 11:57:13)[39904] OnClose : Try to disconnect. [000002994D796600/0000000000000338/0] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:221
+[ Warning ] (2026-05-05 11:57:13)[39904] post disconnect message.[000002994D796600/FFFFFFFFFFFFFFFF/1] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:273
+[ Warning ] (2026-05-05 11:57:13)[04328] Release Connection. [000002994D796600] __at__ C:\luniaallm\AllM\SNet\SNet.cpp:267
+[  Error  ] (2026-05-05 11:57:13)[04328] connection(127.0.0.1:5105) is closed (hostname:LobbyCA) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:139
+[  Info   ] (2026-05-05 11:57:13)[04328] LobbyCA is disconnected from control server __at__ C:\luniaallm\AllM\XRATED\Service\Control\Server.cpp:259
+[  Info   ] (2026-05-05 11:58:57)[02204] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 11:58:57)[02204] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 11:58:57)[14828] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 11:58:57)[42616] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 11:58:57)[02204] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 11:58:57)[02204] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 11:58:57)[02204] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 11:59:05)[46980] connection(127.0.0.1:38131) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 11:59:05)[11184] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[  Info   ] (2026-05-05 12:00:27)[46980] Ping sended. [171792203/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 12:00:27)[11184] Ping arrived. [LobbyCA/171792203/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[ Warning ] (2026-05-05 12:00:59)[11184] OnClose : Try to disconnect. [00000222D6B93FA0/0000000000000330/0] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:221
+[ Warning ] (2026-05-05 12:00:59)[11184] post disconnect message.[00000222D6B93FA0/FFFFFFFFFFFFFFFF/1] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:273
+[ Warning ] (2026-05-05 12:00:59)[27224] Release Connection. [00000222D6B93FA0] __at__ C:\luniaallm\AllM\SNet\SNet.cpp:267
+[  Error  ] (2026-05-05 12:00:59)[27224] connection(127.0.0.1:38131) is closed (hostname:LobbyCA) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:139
+[  Info   ] (2026-05-05 12:00:59)[27224] LobbyCA is disconnected from control server __at__ C:\luniaallm\AllM\XRATED\Service\Control\Server.cpp:259
+[  Info   ] (2026-05-05 12:03:06)[31144] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 12:03:06)[31144] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 12:03:06)[50004] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 12:03:06)[08288] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 12:03:06)[31144] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 12:03:06)[31144] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 12:03:06)[31144] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 12:05:17)[24856] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 12:05:17)[24856] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 12:05:17)[33032] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 12:05:17)[48176] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 12:05:17)[24856] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 12:05:17)[24856] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 12:05:17)[24856] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 12:05:24)[13864] connection(25.15.180.67:41415) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 12:05:24)[56940] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[  Info   ] (2026-05-05 12:06:47)[13864] Ping sended. [172172328/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 12:06:47)[56940] Ping arrived. [LobbyCA/172172328/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[ Warning ] (2026-05-05 12:07:30)[56940] OnClose : Try to disconnect. [000002074110EE20/0000000000000330/0] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:221
+[ Warning ] (2026-05-05 12:07:30)[56940] post disconnect message.[000002074110EE20/FFFFFFFFFFFFFFFF/1] __at__ C:\luniaallm\AllM\SNet\Connection.cpp:273
+[ Warning ] (2026-05-05 12:07:30)[10164] Release Connection. [000002074110EE20] __at__ C:\luniaallm\AllM\SNet\SNet.cpp:267
+[  Error  ] (2026-05-05 12:07:30)[10164] connection(25.15.180.67:41415) is closed (hostname:LobbyCA) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:139
+[  Info   ] (2026-05-05 12:07:30)[10164] LobbyCA is disconnected from control server __at__ C:\luniaallm\AllM\XRATED\Service\Control\Server.cpp:259
+[  Info   ] (2026-05-05 12:10:12)[21648] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 12:10:12)[21648] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 12:10:12)[57936] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 12:10:12)[21104] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 12:10:12)[21648] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 12:10:12)[21648] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 12:10:12)[21648] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 15:14:16)[34168] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 15:14:16)[34168] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 15:14:16)[06772] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 15:14:16)[04076] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 15:14:16)[34168] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 15:14:16)[34168] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 15:14:16)[34168] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 15:14:16)[22016] connection(127.0.0.1:10462) is opened __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:116
+[  Info   ] (2026-05-05 15:14:16)[23904] LobbyCA is authorized on control server(type:2) __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:275
+[  Info   ] (2026-05-05 15:15:46)[22016] Ping sended. [183510984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 15:15:46)[23904] Ping arrived. [LobbyCA/183510984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 15:17:16)[22016] Ping sended. [183600984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 15:17:16)[23904] Ping arrived. [LobbyCA/183600984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 15:18:46)[22016] Ping sended. [183690984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 15:18:46)[23904] Ping arrived. [LobbyCA/183690984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 15:20:16)[22016] Ping sended. [183780984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:235
+[  Info   ] (2026-05-05 15:20:16)[23904] Ping arrived. [LobbyCA/183780984/1] __at__ C:\luniaallm\AllM\XRATED\Service\Control\Acceptor.cpp:312
+[  Info   ] (2026-05-05 15:21:05)[50636] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 15:21:05)[50636] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 15:21:05)[49416] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 15:21:05)[49416] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 15:21:05)[50636] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 15:21:05)[50636] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 15:21:05)[50636] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20
+[  Info   ] (2026-05-05 15:29:51)[36712] created __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:546
+[ Warning ] (2026-05-05 15:29:51)[36712] ContextPool created 157 megabytes used __at__ C:\luniaallm\AllM\SNet\ContextPool.cpp:17
+[ Warning ] (2026-05-05 15:29:51)[38700] ScreenLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:513
+[ Warning ] (2026-05-05 15:29:51)[38700] DefaultFileLogger service started __at__ C:\luniaallm\AllM\Debugging\Logger.cpp:541
+[ Warning ] (2026-05-05 15:29:51)[36712] ControlServer is loaded. __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\Main.cpp:54
+[  Info   ] (2026-05-05 15:29:51)[36712] 16 IoThreads created __at__ C:\luniaallm\AllM\SNet\SNet.cpp:137
+[ Warning ] (2026-05-05 15:29:51)[36712] input locale(Locale.ConsoleInput) set as "C"(C) __at__ C:\luniaallm\AllM\XRATED\Service\Lobby\ConsoleServer\ConsoleInput.cpp:20

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-16" ?>
+<config>
+	<database>
+		<preloadMovemap		value="0" />
+		<preloadScript		value="0" />
+		<forceXmlData		value="0" />
+	</database> 
+
+	<!-- filename for the log-file. if no filename the logging is disabled. the output is in html-format -->
+	<logging>
+		<bulkyLevel			value="0" />	
+		<screenLevel		value="0" />
+		<msvcLevel			value="6" />
+		<fileLevel			value="2" />
+	</logging>
+
+	<stageserver>
+		<configFile						value="stageServerInfo.xml" />
+		<serverName						value="StageURIEL" />
+		<showPacket						value="false" />
+		<showChat						value="false" />
+		<showState						value="false" />
+		<isDevOnly						value="true" />
+		<serverLocation					value="URIEL" />
+		<userCount						value="100" />
+		<roomCount						value="50" />
+		<port							value="15564" />
+		<dbURL							value="http://localhost/Stage" />
+		<ImportantLogger				value="" />
+		<NormalLogger					value="" />
+		<ChatLogger						value="" />
+		<Master							value="localhost:3060" />
+		<SynchronizePlayerDataInMsec	value="600000" />
+	</stageserver>
+
+	<logic>
+		<isSquare		value="false" />
+		<squareName		value="" />
+		<poolInfoPath		value="Database/PoolInfo_Stage.xml" />
+		<ignorePoolInfo  value="true" /> 
+	</logic>
+</config>

@@ -1,0 +1,65 @@
+<allm>
+	<CriticalFiles type="array">
+		<item type="wstring" value="config.dll"/>
+		<item type="wstring" value="debugging.dll"/>
+		<item type="wstring" value="resource.dll"/>
+		<item type="wstring" value="locale.dll"/>
+		<item type="wstring" value="lunia.exe"/>
+		<item type="wstring" value="luniaoption.exe"/>
+		<item type="wstring" value="PatchConfig.xml"/>
+		<item type="wstring" value="criticalFiles.xml"/>
+		<item type="wstring" value="Patch/label.xml@locales/Portuguese.zip"/>
+		<item type="wstring" value="options.xml@locales/Portuguese.zip"/>
+		<item type="wstring" value="LocaleConfig.xml@locales/Portuguese.zip"/>
+		<!--item type="wstring" value="locales/Portuguese/Patch/label.xml"/-->
+
+<!--option-->
+		<item type="wstring" value="xinput1_3.dll"/>
+		<item type="wstring" value="AllMInput.dll"/>
+		<item type="wstring" value="InputKeys.xml"/>
+		<item type="wstring" value="Default_GamePadInput_All_Logitech.xml"/>
+		<item type="wstring" value="Default_GamePadInput_All_PS3.xml"/>
+		<item type="wstring" value="Default_GamePadInput_All_Unknown.xml"/>
+		<item type="wstring" value="Default_GamePadInput_All_XBOX.xml"/>
+		<item type="wstring" value="GamePadInput_All.xml"/>
+		<item type="wstring" value="GamePadInput_LuniaClient.xml"/>
+		<item type="wstring" value="GamePadInput_LuniaGamePadMouse.xml"/>
+		<item type="wstring" value="GamePadInput_LuniaSquare.xml"/>
+		<item type="wstring" value="Cards.xml"/>
+		<item type="wstring" value="SystemConfig.xml"/>
+		<item type="wstring" value="configsource.xml"/>
+		<item type="wstring" value="KeyIcon.bmp"/>
+		<item type="wstring" value="Default_KeyInput_All.xml"/>
+		<item type="wstring" value="KeyInput_All.xml"/>
+		<item type="wstring" value="KeyInput_LuniaSquare.xml"/>
+		<item type="wstring" value="KeyInput_LuniaClient.xml"/>
+	</CriticalFiles>
+	<CopyFiles type="array">
+		<item type="wstring" value="config.dll"/>
+		<item type="wstring" value="debugging.dll"/>
+		<item type="wstring" value="resource.dll"/>
+		<item type="wstring" value="locale.dll"/>
+		<item type="wstring" value="lunia.exe"/>
+		<item type="wstring" value="PatchConfig.xml"/>
+		<item type="wstring" value="criticalFiles.xml"/>
+		<item type="wstring" value="Patch/label.xml@locales/Portuguese.zip"/>
+		<!--item type="wstring" value="locales/Portuguese/Patch/label.xml"/-->
+	</CopyFiles>
+	<IgnoreFiles type="array">
+		<item type="wstring" value="PatchLog.txt"/>
+		<item type="wstring" value="PatchLog.html"/>
+		<item type="wstring" value="OptionLog.html"/>
+		<item type="wstring" value="lunia.inf"/>
+		<item type="wstring" value="Patch.ini"/>
+		<item type="wstring" value="Uninstall.bin"/>
+		<item type="wstring" value="uninstall.exe"/>
+		<item type="wstring" value="PatchConfig.xml"/>
+		<item type="wstring" value="Locales/Portuguese/Options.xml"/>
+		<item type="wstring" value="Locales/Portuguese/LocaleConfig.xml"/>
+
+<!--option-->
+		<item type="wstring" value="config.xml"/>
+		<item type="wstring" value="CustomProfile.xml"/>
+		
+	</IgnoreFiles>
+</allm>

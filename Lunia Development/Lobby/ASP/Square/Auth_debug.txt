@@ -1,0 +1,1 @@
+[BASIC] classNumber=10 | stageLevel=1 | stageExp=0 | pvpLevel=0 | pvpExp=0 | warLevel=0 | warExp=0 | gameMoney=0 | bankMoney=0 | skillPoint=0 | instantStateFlags=2 | createDate=2026-05-10 19:54:32 | characterSerial=2130706474

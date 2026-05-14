@@ -1,0 +1,20 @@
+# Arquivos de log e dump
+*.log
+*.dmp
+*.pdb
+
+# Backups de banco de dados
+*.bak
+
+# Arquivos compactados (Muitos deles passam do limite de 100MB do GitHub)
+*.zip
+*.rar
+*.7z
+
+# Arquivos XML muito grandes (StageLicenseProvider.xml tem 244MB e o GitHub bloqueia arquivos maiores que 100MB)
+*/StageLicenseProvider.xml
+
+# Pastas de build/compilação que costumam ser pesadas (descomente caso precise)
+# /Build/
+# /Release/
+# /Debug/

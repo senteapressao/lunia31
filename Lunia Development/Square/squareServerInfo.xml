@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<allm>
+	<ConfigInformation type="AllM::XRated::Service::Stage::ConfigInformation">
+		<isSquare			type="bool"				value="true" />
+		<roomKind			type="int"				value="1" />
+		<version			type="string"			value="0,0,1" />
+		<serverName			type="string"			value="SquareURIEL" />
+		<dataPath			type="wstring"			value="../Database" />
+		<identifiedfail		type="uint"				value="59757785"/>
+		<bulkyLevel			type="int32"				value="0" />
+		<baseExp			type="float"			value="50.0f" />
+		<extraExp			type="float"			value="50.0f" />
+
+		<!-- kind == 0 으로 설정시 서비스 할 스테이지 라이센스가 필요하다 -->
+		<stageList type="array">
+		</stageList>
+
+		<!-- kind == 1 로 설정시 (광장) room 갯수만큼 이름이 필요하다 -->
+		<squareInfos type="array">
+			<!-- <item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 1" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="4" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 2" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="5" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 3" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="6" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 4" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="7" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 5" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="8" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 6" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="9" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Episodio 7" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="10" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Divino" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="11" />
+				<maxUserCnt		type="int"			value="70" />
+			</item>
+			<item			type="SquareInfo">
+				<squareName		type="string"			value="CA_DEV_Praca Iniciante" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="3" />
+				<maxUserCnt		type="int"			value="11" />
+			</item> -->
+			<item			type="AllM::XRated::Service::Stage::SquareInfo">
+				<squareName		type="string"			value="Divan Normal" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="0" />
+				<maxUserCnt		type="int"			value="70" />
+				<maxFishing		type="int"			value="70" />
+				<maxPlayerStore		type="int"			value="70" />
+			</item>
+			<item			type="AllM::XRated::Service::Stage::SquareInfo">
+				<squareName		type="string"			value="Divan" />
+				<stageGroupHash		type="uint32"			value="53518598" />
+				<accessLevel		type="int"			value="11" />
+				<maxUserCnt		type="int"			value="70" />
+				<maxFishing		type="int"			value="70" />
+				<maxPlayerStore		type="int"			value="70" />
+			</item>
+		</squareInfos>
+		<guildGradeString type="array">
+			<item		type="wstring"		value="Master" />
+			<item		type="wstring"		value="Elder" />
+			<item		type="wstring"		value="Senior" />
+			<item		type="wstring"		value="Junior" />
+			<item		type="wstring"		value="Rookie" />
+		</guildGradeString>
+	</ConfigInformation>
+</allm>

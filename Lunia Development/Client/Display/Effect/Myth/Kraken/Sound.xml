@@ -1,0 +1,69 @@
+<allm version="(0,0)">
+	<KrakenKing_Atk01 type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.KrakenKing_Atk01" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</KrakenKing_Atk01>
+	<KrakenKing_Atk03 type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.KrakenKing_Atk03" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</KrakenKing_Atk03>
+
+	<KrakenBattleLeg_Atk01a type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.KrakenBattleLeg_Atk01a" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</KrakenBattleLeg_Atk01a>
+	<KrakenBattleLeg_Atk01c type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.KrakenBattleLeg_Atk01c" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</KrakenBattleLeg_Atk01c>
+	<KrakenBattleLeg_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.KrakenBattleLeg_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</KrakenBattleLeg_HitFront>
+	<KrakenBattleLeg_Ready type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.KrakenBattleLeg_Ready" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</KrakenBattleLeg_Ready>
+</allm>

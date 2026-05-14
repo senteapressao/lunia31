@@ -1,0 +1,57 @@
+<allm version="(0,0)">
+	<MythEP5_WDragon_Atk01 type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_WDragon_Atk01" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_WDragon_Atk01>
+	<MythEP5_WDragon_Atk02 type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_WDragon_Atk02" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_WDragon_Atk02>
+	<MythEP5_WDragon_Atk03_a type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_WDragon_Atk03_a" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_WDragon_Atk03_a>
+	<MythEP5_WDragon_Atk03_b type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_WDragon_Atk03_b" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_WDragon_Atk03_b>
+	<MythEP5_WDragon_Atk03_c type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_WDragon_Atk03_c" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_WDragon_Atk03_c>
+</allm>

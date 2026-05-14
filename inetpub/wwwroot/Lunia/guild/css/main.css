@@ -1,0 +1,99 @@
+/* @Author Sage */
+body {
+	font-family: Verdana,arial,Verdana;
+	font-size: 11px;
+	color: #626262;	
+}
+
+.container {
+	width: 369px;
+	height: 365px;
+	margin-left: 5px;
+	background: url(../isolation/bg_myguild.gif) no-repeat;
+	border-radius: 10px;
+}
+
+.heading {
+	height: 70px;
+	text-align: center;
+	color: #2a7bd0;
+	line-height: 70px;
+	font-size: 20px;
+	font-variant: small-caps;
+}
+
+.myInfo {
+	height: 50px;
+}
+	
+.iconArea {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+}
+
+	
+.personalArea {
+	float: left;
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	padding-top: 10px;
+}
+	
+.guildName {
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 13px;
+}
+
+/*begin block quote*/
+.blockquote {
+	width: 90%;
+	padding-top: 12px;
+	margin-top: 15px;
+	margin-left: 10%;
+	background-color: #E2E2E2;
+
+	
+	box-sizing: border-box;
+	border-left: 2px solid #2a7bd0;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-indent: 23px;
+	padding-bottom: 12px;
+	text-align: justify;
+} 
+	/*end block quote*/
+.fileArea {
+	padding-top: 05px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+	
+.instructions {
+	font-size: 10px;
+}
+
+.submitArea {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	
+.submits {
+	border:none;
+	width:84px;
+	height:26px;
+	background-image: url(../isolation/btnSubmit.png);
+	margin-right: 15px;
+}
+
+.cancel {
+	border:none;
+	width:84px;
+	height:26px;
+	background-image: url(../isolation/btnCancel.png);
+}

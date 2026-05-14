@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<database>
+		<preloadMovemap		value="0" />
+		<preloadScript		value="0" />
+		<forceXmlData		value="0" />
+	</database> 
+
+	<!-- filename for the log-file. if no filename the logging is disabled. the output is in html-format -->
+	<logging>
+		<file				value="bulky.txt" />
+		<screenLevel		value="0" />
+		<msvcLevel			value="0" />
+		<fileLevel			value="2" />
+	</logging>
+
+	<stageserver>
+		<configFile		value="squareServerInfo.xml" />
+		<serverName		value="SquareURIEL" />
+		<showPacket		value="false" />
+		<showChat		value="false" />
+		<showState		value="false" />
+		<isDevOnly		value="false" />
+		<serverLocation		value="URIEL" />
+		<userCount		value="200" />
+		<roomCount		value="14" />
+		<port			value="15551" />
+		<IP	 	 	 	value="127.0.0.1" />
+		<dbURL			value="http://localhost/Square/" />
+		<ImportantLogger	value="" />
+		<NormalLogger		value="" />
+		<ChatLogger		value="" />
+		<Master							value="localhost:3060" />
+		<SynchronizePlayerDataInMsec	value="600000" />
+		<mailAlarmIntervalInSec		value="30" />
+	</stageserver>
+
+	<logic>
+		<isSquare		value="true" />
+		<squareName		value="Square" />
+		<poolInfoPath		value="Database/PoolInfo_Square.xml" />
+		<ignorePoolInfo	value="true" />
+	</logic>
+</config>

@@ -1,0 +1,20 @@
+{
+	"Config": {
+		"ServerAddress": {
+			"Ip": "127.0.0.1",
+			"Port": 15558
+		},
+		"ClientAddress": {
+			"Ip": "127.0.0.1",
+			"Port": 15557
+		},
+		"ServerName": "AchievementCA",
+		"UrlBase": "http://localhost/system",
+		"HostPassword": "#Lobby#",
+		"Path": "C:\/Server\/Database\/",
+		"Capacity": 250,
+		"MaxPingTimeOutCount": 2,
+		"PingTimeIntervalInSeconds": 30,
+		"ShowPacket": false
+	}
+}

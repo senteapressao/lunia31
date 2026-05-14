@@ -1,0 +1,260 @@
+<allm version="(0,0)">
+	<Myth6_Archer_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Myth6_Archer_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Archer_HitFront>
+	<Myth6_Wizard_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Myth6_Wizard_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Wizard_HitFront>
+
+	<Mandra_End type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Mandra_End" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Mandra_End>
+	<Mandra_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Mandra_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Mandra_HitFront>
+	<Mandra_Run type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Mandra_Run" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Mandra_Run>
+	<Mandra_Start type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Mandra_Start" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Mandra_Start>
+
+
+	<TalmanBoss_Angry type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.TalmanBoss_Angry" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</TalmanBoss_Angry>
+	<TalmanBoss_Run type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.TalmanBoss_Run" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</TalmanBoss_Run>
+	<BasiliskBoss_Run type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.BasiliskBoss_Run" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</BasiliskBoss_Run>
+	<BasiliskBoss_Angry type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.BasiliskBoss_Angry" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</BasiliskBoss_Angry>
+
+	<HornTiger_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.HornTiger_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</HornTiger_HitFront>
+	<Deer_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Deer_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Deer_HitFront>
+	<Gryphon_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Gryphon_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Gryphon_HitFront>
+	<Talman_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Talman_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Talman_HitFront>
+	<BasiliskBasic_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.BasiliskBasic_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</BasiliskBasic_HitFront>
+	<Kentaurus_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Kentaurus_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Kentaurus_HitFront>
+	<Hippogriph_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Hippogriph_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Hippogriph_HitFront>
+
+	<Myth6_Archer_DownStart type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Hippogriph_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Archer_DownStart>
+	<Myth6_Archer_HitFornt type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Hippogriph_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Archer_HitFornt>
+	<Myth6_Wizard_DownStart type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Hippogriph_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Wizard_DownStart>
+	<Myth6_Wizard_HitFornt type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Hippogriph_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Wizard_HitFornt>
+	<Myth6_LowBoss_Angry type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Myth6_LowBoss_Angry" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_LowBoss_Angry>
+	<Myth6_Fix_HitFront type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.Myth6_Fix_HitFront" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</Myth6_Fix_HitFront>
+</allm>

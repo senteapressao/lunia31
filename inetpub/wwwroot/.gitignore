@@ -1,0 +1,5 @@
+**/logs/**
+.vscode/*
+Lunia/guildicon/*
+!Lunia/guildicon/0.png
+Lunia/Rank/cache/*.xml

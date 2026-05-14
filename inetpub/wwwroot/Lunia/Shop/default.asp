@@ -1,0 +1,1 @@
+﻿<%	Option Explicit %><%	Response.Redirect "/shop_v2/"	'Response.Redirect "/shop_v2_gb/"%>

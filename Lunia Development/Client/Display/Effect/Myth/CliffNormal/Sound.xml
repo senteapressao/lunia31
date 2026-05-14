@@ -1,0 +1,35 @@
+<allm version="(0,0)">
+	<MythEP5_Cliff_Angry type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_Cliff_Angry" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_Cliff_Angry>
+	<MythEP5_Cliff_Atk01 type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_Cliff_Atk01" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_Cliff_Atk01>
+	<MythEP5_Cliff_Atk02 type="AllM::XRated::Scene::Effect::EffectBundle">
+		<Events type="array">
+			<item type="Event">
+				<Type                            type="int32"           value="3" />
+				<Time                            type="float"           value="0.000000" />
+				<EffectName                      type="wstring"         value="NPCSound.MythEP5_Cliff_Atk02" />
+				<Parent                          type="wstring"         value="" />
+				<Offset                          type="float3"          value="(1.000000, 0.000000, 0.000000)" />
+			</item>
+		</Events>
+	</MythEP5_Cliff_Atk02>
+</allm>

@@ -1,0 +1,3199 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ScriptEngine@instance;
+const uint32 specialNpcHash=59210656;
+
+int tlspak;
+
+uint32[]specialNPC(15);
+float xBB;
+float yBB;
+const int locationPositionNumMax=170;
+float[]locationPositionX1(locationPositionNumMax);
+float[]locationPositionY1(locationPositionNumMax);
+float[]locationPositionX2(locationPositionNumMax);
+float[]locationPositionY2(locationPositionNumMax);
+float[]locationXLength(locationPositionNumMax);
+float[]locationYLength(locationPositionNumMax);
+float[]locationLength(locationPositionNumMax);
+int locationPositionNum;
+
+const int roomLocationNumMax=20;
+int[]roomMainLocation(roomLocationNumMax);
+int[]roomDefLocation(roomLocationNumMax);
+int[]roomLocationPlayerNum(roomLocationNumMax);
+int[]roomBlockLocationNum(roomLocationNumMax);
+int[]roomEnteredWarpLocationNum(roomLocationNumMax);
+int[]roomClearedWarpLocationNum(roomLocationNumMax);
+int[]roomClearedNextRoomLocationNum(roomLocationNumMax);
+
+int[]roomSpecialType(roomLocationNumMax);
+
+bool[]roomMonsterGroupDuplication(roomLocationNumMax);
+int[]roomMonsterGroupNum(roomLocationNumMax);
+bool[]roomMISCGroupDuplication(roomLocationNumMax);
+int[]roomMISCGroupNum(roomLocationNumMax);
+int roomLocationNum;
+
+int[]roomBlockLocation(roomLocationNumMax*10);
+int[]roomBlockType(roomLocationNumMax*10);
+
+int[]roomEnteredWarpLocationFrom(roomLocationNumMax*10);
+int[]roomEnteredWarpLocationTo(roomLocationNumMax*10);
+
+int[]roomClearedWarpLocationFrom(roomLocationNumMax*10);
+int[]roomClearedWarpLocationTo(roomLocationNumMax*10);
+
+int[]roomClearedNextRoomLocation(roomLocationNumMax*10);
+
+int[]allRoomMonsterGroup(roomLocationNumMax);
+int[]allRoomMonsterGroupProbability(roomLocationNumMax);
+int[]allRoomMonsterGroupMin(roomLocationNumMax);
+int[]allRoomMonsterGroupMax(roomLocationNumMax);
+int allRoomMonsterGroupProb;
+int allRoomMonsterGroupNum;
+
+int[]roomMonsterGroup(roomLocationNumMax*10);
+int[]roomMonsterGroupProb(roomLocationNumMax*10);
+int[]roomMonsterGroupMin(roomLocationNumMax*10);
+int[]roomMonsterGroupMax(roomLocationNumMax*10);
+
+int[]allRoomMISCGroup(roomLocationNumMax);
+int[]allRoomMISCGroupProbability(roomLocationNumMax);
+int[]allRoomMISCGroupMin(roomLocationNumMax);
+int[]allRoomMISCGroupMax(roomLocationNumMax);
+int allRoomMISCGroupProb;
+int allRoomMISCGroupNum;
+
+int[]roomMISCGroup(roomLocationNumMax*10);
+int[]roomMISCGroupProb(roomLocationNumMax*10);
+int[]roomMISCGroupMin(roomLocationNumMax*10);
+int[]roomMISCGroupMax(roomLocationNumMax*10);
+
+int[]roomStartLocation(roomLocationNumMax);
+int roomStartLocationNum;
+
+bool[]roomCleared(roomLocationNumMax);
+
+const int miscNumMax=10;
+int[]miscGroup(miscNumMax);
+uint32[]miscHash(miscNumMax);
+int[]miscType(miscNumMax);
+int[]miscProbability(miscNumMax);
+int[]miscGroupIndexStart(miscNumMax);
+int[]miscGroupIndexEnd(miscNumMax);
+int miscNum;
+
+const int monsterNumMax=30;
+int[]monsterGroup(monsterNumMax);
+uint32[]monsterHash(monsterNumMax);
+int[]monsterType(monsterNumMax);
+int[]monsterProbability(monsterNumMax);
+int[]monsterGroupIndexStart(monsterNumMax);
+int[]monsterGroupIndexEnd(monsterNumMax);
+int monsterNum;
+
+
+
+const int explevel=71;
+const uint32 clearexp=11644;
+int rnd;
+int rnd2;
+const int showshow=0;
+
+bool mimic=false;
+float mimicx=0;
+float mimicy=0;
+
+const int SecretLocaNum=2;
+float[]SecretType(SecretLocaNum);
+float[]SecretLocaX(SecretLocaNum);
+float[]SecretLocaY(SecretLocaNum);
+class AdditionalPopManager
+{
+int popRemain;
+int popGroup;
+int popMinNum;
+int popMaxNum;
+float popTime;
+};
+
+int popCnt;
+
+AdditionalPopManager[]additionGroup(monsterNumMax*5);
+AdditionalPopManager[]additionRoom(roomLocationNumMax*5);
+int[]monsterGroupPopCount(monsterNumMax);
+int[]roomLocationPopCount(roomLocationNumMax);
+
+const int monsterPosNum=30;
+float[]roomObjectX(monsterPosNum);
+float[]roomObjectY(monsterPosNum);
+int[]roomObjectXD(monsterPosNum);
+int[]roomObjectYD(monsterPosNum);
+
+int globalNpcGroup;
+int globalPopStep;
+int presentLocation;
+int popMonsterNum;
+
+int tempStartLocation;
+int startLocation;
+
+bool addtionalRoomLocationPop;
+bool addtionalMonsterGroupPop;
+
+class ObjectManager
+{
+int group;
+int num;
+};
+
+class AlliedObjectManager
+{
+int zero;
+int one;
+int two;
+};
+
+class AlliedObject
+{
+uint32 hash;
+float x;
+float y;
+int xd;
+int yd;
+};
+int darkElfLocation;
+AlliedObject[]tempAlliedObject(10);
+int tempAlliedObjectNum;
+uint32 bossHash;
+bool darkElfLocationPop;
+bool specialEventPop;
+
+bool itemUseTmp;
+int itemUseCnt;
+bool itemChk;
+uint32[]itemUsePlayer(8);
+
+int PlayerNum=0;
+
+bool BossPop;
+
+uint32 Boss1;
+uint32 Boss2;
+
+int GearNum;
+
+float NPC_X1;
+float NPC_Y1;
+float NPC_X2;
+float NPC_Y2;
+
+uint32 tempSerial;
+
+int location;
+int npcPopNum;
+
+int RoomNPC_X;
+int RoomNPC_Y;
+bool BossClear;
+
+int TotalPopNum;
+bool LocOn;
+
+int RandomMonsterGroupInt;
+bool BossCinema;
+
+int DarkElfRoomNum;
+
+
+bool citizenQuestTmp;
+int citizenQuestCnt;
+bool citizenQuestChk;
+uint32[]citizenQuestPlayer(8);
+
+int questParameter;
+
+int tempRandomNum;
+void SetInstance(ScriptEngine&inout i)
+{
+@instance=@i;
+}
+void Initialize()
+{
+
+questParameter=0;
+citizenQuestCnt=0;
+citizenQuestChk=false;
+
+DarkElfRoomNum=0;
+BossCinema=false;
+RandomMonsterGroupInt=instance.GetRandomInt(0,3);
+LocOn=false;
+TotalPopNum=0;
+BossClear=false;
+RoomNPC_X=0;
+RoomNPC_Y=0;
+
+tlspak=0;
+
+npcPopNum=0;
+location=0;
+tempSerial=0;
+NPC_X1=0.0f;
+NPC_Y1=0.0f;
+NPC_X2=0.0f;
+NPC_Y2=0.0f;
+
+GearNum=-1;
+Boss1=0;
+Boss2=0;
+
+BossPop=false;
+PlayerNum=0;
+for(int i=0;i<15;i++)
+{
+specialNPC[i]=0;
+}
+locationPositionNum=0;
+roomLocationNum=0;
+allRoomMonsterGroupProb=0;
+allRoomMonsterGroupNum=0;
+allRoomMISCGroupProb=0;
+allRoomMISCGroupNum=0;
+miscNum=0;
+monsterNum=0;
+globalNpcGroup=0;
+globalPopStep=-1;
+presentLocation=0;
+popMonsterNum=0;
+roomStartLocationNum=0;
+tempStartLocation=0;
+startLocation=0;
+roomStartLocation[0]=0;
+popCnt=0;
+addtionalRoomLocationPop=false;
+addtionalMonsterGroupPop=false;
+bossHash=0;
+darkElfLocation=0;
+tempAlliedObjectNum=0;
+darkElfLocationPop=false;
+specialEventPop=false;
+
+itemUseCnt=0;
+itemChk=false;
+for(int i=0;i<8;i++)
+{
+itemUsePlayer[i]=0;
+citizenQuestPlayer[i]=0;
+}
+AddLocationPosition(208.000000f,285.075012f,240.000000f,162.900009f,32.000000f,122.175003f,126.296204f);
+AddLocationPosition(243.199997f,285.075012f,460.800018f,162.900009f,217.600021f,122.175003f,249.5526f);
+AddLocationPosition(326.399994f,276.024994f,444.800018f,167.425003f,118.400024f,108.59999f,160.662763f);
+AddLocationPosition(585.600037f,285.075012f,896.000000f,158.375000f,310.399962f,126.700012f,335.262627f);
+AddLocationPosition(688.000000f,271.500000f,880.000000f,176.475006f,192.000000f,95.024993f,214.228264f);
+AddLocationPosition(1017.600037f,280.550018f,1324.800049f,153.850006f,307.200011f,126.700012f,332.302181f);
+AddLocationPosition(1123.200073f,257.925018f,1305.599976f,171.949997f,182.399903f,85.975021f,201.646792f);
+AddLocationPosition(118.400002f,819.025024f,422.399994f,696.850037f,303.999992f,122.174986f,327.631992f);
+AddLocationPosition(230.400009f,805.450012f,406.399994f,710.424988f,175.999984f,95.025024f,200.014373f);
+AddLocationPosition(556.799988f,819.025024f,860.799988f,692.325012f,304.000000f,126.700012f,329.346159f);
+AddLocationPosition(675.200012f,800.924988f,838.400024f,705.900024f,163.200012f,95.024963f,188.849113f);
+AddLocationPosition(1046.400024f,950.250000f,1225.599976f,755.674988f,179.199951f,194.575012f,264.522319f);
+AddLocationPosition(1088.000000f,900.475037f,1187.200073f,791.875000f,99.200072f,108.600037f,147.087124f);
+AddLocationPosition(217.600006f,533.950012f,342.399994f,447.975006f,124.799987f,85.975006f,151.547808f);
+AddLocationPosition(249.600006f,524.900024f,323.200012f,457.025024f,73.600006f,67.875f,100.11981f);
+AddLocationPosition(652.799988f,538.475037f,777.600037f,452.500000f,124.800049f,85.975037f,151.547877f);
+AddLocationPosition(697.600037f,529.424988f,764.799988f,466.075012f,67.19995f,63.349975f,92.35287f);
+AddLocationPosition(1065.599976f,524.900024f,1193.599976f,438.925018f,128.000000f,85.975006f,154.193714f);
+AddLocationPosition(1116.800049f,511.325012f,1177.599976f,452.500000f,60.799927f,58.825012f,84.599132f);
+AddLocationPosition(214.400009f,1054.325073f,339.200012f,968.350037f,124.800003f,85.975035f,151.547838f);
+AddLocationPosition(259.200012f,1045.275024f,326.399994f,977.400024f,67.199981f,67.875f,95.513627f);
+AddLocationPosition(656.000000f,1063.375000f,784.000000f,972.875000f,128.000000f,90.5f,156.761761f);
+AddLocationPosition(694.400024f,1049.800049f,771.200012f,981.925049f,76.799987f,67.875f,102.495139f);
+AddLocationPosition(364.800018f,316.750000f,396.800018f,298.649994f,32.000000f,18.100006f,36.764251f);
+AddLocationPosition(211.199997f,497.750000f,214.400009f,493.225006f,3.200012f,4.524993f,5.542169f);
+AddLocationPosition(182.400009f,511.325012f,198.400009f,475.125000f,16.000000f,36.200012f,39.578287f);
+AddLocationPosition(380.800018f,294.125000f,384.000000f,289.600006f,3.199981f,4.524993f,5.542151f);
+AddLocationPosition(470.399994f,248.875000f,483.200012f,208.150009f,12.800018f,40.72499f,42.68917f);
+AddLocationPosition(579.200012f,226.250000f,582.400024f,221.725006f,3.200012f,4.524993f,5.542169f);
+AddLocationPosition(553.600037f,244.350006f,569.600037f,203.625000f,16.000000f,40.725006f,43.755298f);
+AddLocationPosition(464.000000f,230.775009f,467.200012f,226.250000f,3.200012f,4.525009f,5.542182f);
+AddLocationPosition(710.400024f,316.750000f,742.400024f,298.649994f,32.000000f,18.100006f,36.764251f);
+AddLocationPosition(646.400024f,497.750000f,649.600037f,493.225006f,3.200013f,4.524993f,5.542169f);
+AddLocationPosition(620.799988f,515.850037f,636.799988f,479.650024f,16.000000f,36.200013f,39.578288f);
+AddLocationPosition(726.400024f,294.125000f,729.600037f,289.600006f,3.200013f,4.524993f,5.542169f);
+AddLocationPosition(905.600037f,244.350006f,918.400024f,199.100006f,12.799986f,45.25f,47.025547f);
+AddLocationPosition(1011.200012f,230.775009f,1014.400024f,226.250000f,3.200012f,4.525009f,5.542182f);
+AddLocationPosition(988.799988f,248.875000f,1004.799988f,203.625000f,16.000000f,45.25f,47.995442f);
+AddLocationPosition(899.200012f,221.725006f,902.400024f,217.200012f,3.200012f,4.524994f,5.542169f);
+AddLocationPosition(1145.599976f,316.750000f,1177.599976f,298.649994f,32.000000f,18.100006f,36.764251f);
+AddLocationPosition(1059.200073f,484.175018f,1062.400024f,479.650024f,3.199951f,4.524994f,5.542134f);
+AddLocationPosition(1033.599976f,502.275024f,1046.400024f,461.550018f,12.800048f,40.725005f,42.689193f);
+AddLocationPosition(1161.599976f,289.600006f,1164.800049f,285.075012f,3.200072f,4.524993f,5.542203f);
+AddLocationPosition(1337.599976f,244.350006f,1350.400024f,203.625000f,12.800048f,40.725006f,42.689194f);
+AddLocationPosition(112.000000f,769.250000f,115.200005f,764.725037f,3.200005f,4.524962f,5.542139f);
+AddLocationPosition(89.599998f,787.350037f,105.599998f,742.100037f,16.000000f,45.25f,47.995442f);
+AddLocationPosition(1331.200073f,226.250000f,1334.400024f,221.725006f,3.199951f,4.524993f,5.542133f);
+AddLocationPosition(243.199997f,859.750000f,275.200012f,841.650024f,32.000015f,18.099975f,36.764249f);
+AddLocationPosition(208.000000f,1018.125000f,211.199997f,1013.600037f,3.199996f,4.524962f,5.542134f);
+AddLocationPosition(182.400009f,1036.224976f,198.400009f,995.500000f,16.000000f,40.724975f,43.755269f);
+AddLocationPosition(259.200012f,832.600037f,262.399994f,828.075012f,3.199981f,4.525025f,5.542177f);
+AddLocationPosition(435.200012f,787.350037f,448.000000f,746.625000f,12.799987f,40.725037f,42.689205f);
+AddLocationPosition(550.400024f,764.725037f,553.600037f,760.200012f,3.200013f,4.525025f,5.542195f);
+AddLocationPosition(528.000000f,782.825012f,544.000000f,737.575012f,16.000000f,45.25f,47.995442f);
+AddLocationPosition(428.800018f,769.250000f,432.000000f,764.725037f,3.199981f,4.524962f,5.542125f);
+AddLocationPosition(688.000000f,850.700012f,716.799988f,832.600037f,28.799987f,18.099974f,34.015412f);
+AddLocationPosition(646.400024f,1018.125000f,649.600037f,1013.600037f,3.200013f,4.524962f,5.542144f);
+AddLocationPosition(624.000000f,1040.750000f,640.000000f,995.500000f,16.000000f,45.25f,47.995442f);
+AddLocationPosition(700.799988f,828.075012f,704.000000f,823.549988f,3.200012f,4.525024f,5.542194f);
+AddLocationPosition(870.400024f,782.825012f,883.200012f,742.100037f,12.799987f,40.724974f,42.689145f);
+AddLocationPosition(1056.000000f,773.775024f,1059.200073f,769.250000f,3.200072f,4.525024f,5.542229f);
+AddLocationPosition(115.200005f,266.975006f,150.400009f,199.100006f,35.200004f,67.875f,76.459505f);
+AddLocationPosition(1180.800049f,932.150024f,1228.800049f,882.375000f,48.000000f,49.775024f,69.148774f);
+
+
+
+
+AddRoomLocation(1,2);
+AddRoomLocation(3,4);
+AddRoomLocation(5,6);
+AddRoomLocation(7,8);
+AddRoomLocation(9,10);
+AddRoomLocation(11,12);
+AddRoomLocation(13,14);
+AddRoomLocation(15,16);
+AddRoomLocation(17,18);
+AddRoomLocation(19,20);
+AddRoomLocation(21,22);
+
+AddRoomClearedNextRoomLocation(1,3);
+AddRoomClearedNextRoomLocation(1,13);
+AddRoomClearedNextRoomLocation(3,5);
+AddRoomClearedNextRoomLocation(3,15);
+AddRoomClearedNextRoomLocation(5,7);
+AddRoomClearedNextRoomLocation(5,17);
+AddRoomClearedNextRoomLocation(7,9);
+AddRoomClearedNextRoomLocation(7,19);
+AddRoomClearedNextRoomLocation(9,11);
+AddRoomClearedNextRoomLocation(9,21);
+AddRoomClearedNextRoomLocation(13,3);
+AddRoomClearedNextRoomLocation(15,5);
+AddRoomClearedNextRoomLocation(17,7);
+AddRoomClearedNextRoomLocation(19,9);
+
+
+
+
+
+
+AddRoomClearedWarpLocation(1,23,24);
+AddRoomClearedWarpLocation(1,25,26);
+AddRoomClearedWarpLocation(1,27,28);
+AddRoomClearedWarpLocation(1,29,30);
+
+AddRoomClearedWarpLocation(3,31,32);
+AddRoomClearedWarpLocation(3,33,34);
+AddRoomClearedWarpLocation(3,35,36);
+AddRoomClearedWarpLocation(3,37,38);
+
+AddRoomClearedWarpLocation(5,39,40);
+AddRoomClearedWarpLocation(5,41,42);
+AddRoomClearedWarpLocation(5,43,44);
+AddRoomClearedWarpLocation(5,45,46);
+
+AddRoomClearedWarpLocation(7,47,48);
+AddRoomClearedWarpLocation(7,49,50);
+AddRoomClearedWarpLocation(7,51,52);
+AddRoomClearedWarpLocation(7,53,54);
+
+AddRoomClearedWarpLocation(9,55,56);
+AddRoomClearedWarpLocation(9,57,58);
+AddRoomClearedWarpLocation(9,59,60);
+
+
+AddRoomClearedWarpLocation(13,25,26);
+AddRoomClearedWarpLocation(13,27,28);
+
+AddRoomClearedWarpLocation(15,33,34);
+AddRoomClearedWarpLocation(15,35,36);
+
+AddRoomClearedWarpLocation(17,41,42);
+AddRoomClearedWarpLocation(17,43,44);
+
+AddRoomClearedWarpLocation(19,49,50);
+AddRoomClearedWarpLocation(19,51,52);
+
+AddRoomClearedWarpLocation(21,57,58);
+AddRoomClearedWarpLocation(21,59,60);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AddMonsterToMonsterGroup(0,50518329,1,0);
+AddMonsterToMonsterGroup(0,63976915,1,0);
+AddMonsterGroupAdditionalPop(0,0,4*((instance.GetActivePlayerCnt()+6.0f)/10.0f),0.0f,1,4*((instance.GetActivePlayerCnt()+6.0f)/10.0f),5*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddMonsterToMonsterGroup(1,50518329,1,0);
+AddMonsterToMonsterGroup(1,63976915,1,0);
+AddRoomMonsterGroupProbMinMax(1,false,0,50,6*((instance.GetActivePlayerCnt()+6.0f)/10.0f),8*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+instance.AddInterestLocation(61,true);
+instance.AddInterestLocation(1,true);
+
+
+
+
+
+
+
+
+
+CreateBlock(0,0,34839771,15);
+instance.AddInterestObjects(34839771,true);
+instance.AddInterestObjects(5450353,true);
+
+CreateBlock(27,0,9791246,8);
+
+
+
+
+switch(instance.GetRandomInt(0,5)){
+case 0:DarkElfRoomNum=13;darkElfLocation=13;break;
+case 1:DarkElfRoomNum=15;darkElfLocation=15;break;
+case 2:DarkElfRoomNum=17;darkElfLocation=17;break;
+case 3:DarkElfRoomNum=19;darkElfLocation=19;break;
+case 4:DarkElfRoomNum=21;darkElfLocation=21;break;
+}
+
+instance.CreateObjectByPositionD(8246481,191.42f,265.85f,1,0,1);
+
+
+tempRandomNum=instance.GetRandomInt(0,100);
+if(tempRandomNum>15)instance.CreateObjectByPositionD(19219165,230.41f,520.75f,1,-1,100);
+if(tempRandomNum>65)instance.CreateObjectByPositionD(19219165,329.74f,463.89f,-1,1,100);
+
+tempRandomNum=instance.GetRandomInt(0,100);
+if(tempRandomNum>15)instance.CreateObjectByPositionD(19219165,765.46f,524.29f,-1,-1,100);
+if(tempRandomNum>65)instance.CreateObjectByPositionD(19219165,676.06f,464.09f,0,-1,100);
+
+tempRandomNum=instance.GetRandomInt(0,100);
+if(tempRandomNum>15)instance.CreateObjectByPositionD(19219165,1158.78f,512.92f,0,-1,100);
+if(tempRandomNum>65)instance.CreateObjectByPositionD(19219165,1181.48f,494.19f,-1,-1,100);
+
+tempRandomNum=instance.GetRandomInt(0,100);
+if(tempRandomNum>15)instance.CreateObjectByPositionD(19219165,267.83f,983.09f,0,-1,100);
+if(tempRandomNum>65)instance.CreateObjectByPositionD(19219165,327.42f,1013.19f,-1,0,100);
+
+tempRandomNum=instance.GetRandomInt(0,100);
+if(tempRandomNum>15)instance.CreateObjectByPositionD(19219165,668.72f,989.10f,-1,-1,100);
+if(tempRandomNum>65)instance.CreateObjectByPositionD(19219165,769.94f,985.09f,1,1,100);
+
+
+mimic=false;
+mimicx=0;
+mimicy=0;
+SecretType[0]=1;
+SecretType[1]=3;
+
+SecretLocaX[0]=483.23f;
+SecretLocaY[0]=457.45f;
+
+SecretLocaX[1]=736.80f;
+SecretLocaY[1]=70.55f;
+
+
+
+rnd=instance.GetRandomInt(0,100);
+int rndmimic=90;
+if(rnd<rndmimic)
+{
+mimic=true;
+}
+else
+{
+mimic=false;
+}
+
+
+if(mimic==true)
+{
+
+rnd=instance.GetRandomInt(0,SecretLocaNum);
+
+
+rnd2=instance.GetRandomInt(0,10000);
+
+
+if(rnd2<showshow)
+{
+rnd2=instance.GetRandomInt(0,SecretLocaNum);
+
+if(SecretLocaNum>1)
+{
+do
+{
+rnd2=instance.GetRandomInt(0,SecretLocaNum);
+}while(rnd2==rnd);
+}
+for(int loop=0;loop<SecretLocaNum;loop++)
+{
+
+
+if(rnd==loop)
+{
+instance.CreateObjectByPosition(36612415,SecretLocaX[loop],SecretLocaY[loop],100);
+mimicx=SecretLocaX[loop];
+mimicy=SecretLocaY[loop];
+}
+else if(rnd2==loop)
+{
+instance.CreateObjectByPosition(18802129,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+else
+{
+if(SecretType[loop]==1)
+{
+instance.CreateObjectByPosition(12105896,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==2)
+{
+instance.CreateObjectByPosition(52792218,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==3)
+{
+instance.CreateObjectByPosition(57117935,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+}
+}
+}
+
+else
+{
+for(int loop=0;loop<SecretLocaNum;loop++)
+{
+
+if(rnd==loop)
+{
+instance.CreateObjectByPosition(36612415,SecretLocaX[loop],SecretLocaY[loop],100);
+mimicx=SecretLocaX[loop];
+mimicy=SecretLocaY[loop];
+}
+else
+{
+if(SecretType[loop]==1)
+{
+instance.CreateObjectByPosition(12105896,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==2)
+{
+instance.CreateObjectByPosition(52792218,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==3)
+{
+instance.CreateObjectByPosition(57117935,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+}
+}
+}
+
+instance.AddInterestObjects(36612415,true);
+}
+
+
+
+else
+{
+
+int rnd=instance.GetRandomInt(0,10000);
+
+
+if(rnd<showshow)
+{
+
+rnd=instance.GetRandomInt(0,SecretLocaNum);
+
+for(int loop=0;loop<SecretLocaNum;loop++)
+{
+
+if(rnd==loop)
+{
+instance.CreateObjectByPosition(18802129,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+else
+{
+if(SecretType[loop]==1)
+{
+instance.CreateObjectByPosition(12105896,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==2)
+{
+instance.CreateObjectByPosition(52792218,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==3)
+{
+instance.CreateObjectByPosition(57117935,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+}
+}
+}
+
+
+else
+{
+
+for(int loop=0;loop<SecretLocaNum;loop++)
+{
+if(SecretType[loop]==1)
+{
+instance.CreateObjectByPosition(12105896,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==2)
+{
+instance.CreateObjectByPosition(52792218,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+if(SecretType[loop]==3)
+{
+instance.CreateObjectByPosition(57117935,SecretLocaX[loop],SecretLocaY[loop],100);
+}
+}
+}
+}
+
+
+
+instance.AddInterestLocation(64,true);
+instance.AddInterestLocation(65,true);
+
+
+instance.CreateNPCByPos(15719063,750.69f,96.22f,100,0,0,0,0);
+
+instance.CreateObjectByPosition(33706269,458.69f,310.44f,100);
+}
+void TimerAlarmed(int timer)
+{
+int roomNum;
+int tempGroup;
+int tempMin;
+int tempMax;
+int tempNum;
+
+switch(timer)
+{
+
+case 0:
+if(popMonsterNum>0&&globalPopStep>=0)
+{
+roomNum=GetRoomNumByLocation(presentLocation);
+tempGroup=additionRoom[roomNum*5+globalPopStep].popGroup;
+tempMin=additionRoom[roomNum*5+globalPopStep].popMinNum;
+tempMax=additionRoom[roomNum*5+globalPopStep].popMaxNum;
+if(tempMin<=tempMax&&tempMin>=0)tempNum=instance.GetRandomInt(tempMin,tempMax+1);
+else tempNum=0;
+CreateNPC(roomDefLocation[GetRoomNumByLocation(presentLocation)],tempGroup,tempNum,0,true);
+}
+break;
+
+case 1:
+if(popMonsterNum>0&&globalPopStep>=0)
+{
+roomNum=GetRoomNumByLocation(presentLocation);
+tempGroup=additionGroup[globalNpcGroup*5+globalPopStep].popGroup;
+tempMin=additionGroup[globalNpcGroup*5+globalPopStep].popMinNum;
+tempMax=additionGroup[globalNpcGroup*5+globalPopStep].popMaxNum;
+if(tempMin<=tempMax&&tempMin>=0)tempNum=instance.GetRandomInt(tempMin,tempMax+1);
+else tempNum=0;
+CreateNPC(roomDefLocation[GetRoomNumByLocation(presentLocation)],tempGroup,tempNum,0,true);
+}
+break;
+case 2:
+instance.AddInterestObjectLocation(specialNPC[1],15.0f,true);
+break;
+case 3:
+instance.AddInterestObjectLocation(specialNPC[2],15.0f,true);
+break;
+case 4:
+
+instance.ChangeNPCTeam(specialNPC[3],100);
+instance.ChangeNPCSight(specialNPC[3],60.0f);
+specialEventPop=true;
+instance.AddInterestObjectLocation(specialNPC[3],100.0f,true);
+popMonsterNum++;
+instance.DestroyObjectFromLocationById(46487358,darkElfLocation,true);
+instance.DestroyObjectFromLocationById(278870,darkElfLocation,true);
+instance.DestroyObjectFromLocationById(45752776,darkElfLocation,true);
+for(int i=0;i<tempAlliedObjectNum;i++)
+{
+
+specialNPC[i+4]=instance.CreateNPCByPosD(tempAlliedObject[i].hash,tempAlliedObject[i].x,tempAlliedObject[i].y,tempAlliedObject[i].xd,tempAlliedObject[i].yd,100,1,0,roomDefLocation[GetRoomNumByLocation(darkElfLocation)],1);
+instance.AddSpecifiedObjects(specialNPC[i+4]);
+popMonsterNum++;
+}
+break;
+case 5:
+case 6:
+case 7:
+instance.ChangeNPCSight(specialNPC[timer-4],0.0f);
+break;
+case 8:
+for(int i=0;i<tempAlliedObjectNum+1;i++)
+{
+
+instance.ChangeNPCSight(specialNPC[3+i],0.0f);
+instance.ChangeNPCAction(specialNPC[3+i],22910204);
+instance.ChangeNPCAIBySerial(specialNPC[3+i],0,0);
+}
+instance.BroadcastEvent(6);
+specialNPC[tempAlliedObjectNum+4]=instance.CreateNPCByPosD(6725743,locationXLength[darkElfLocation]/2+locationPositionX1[darkElfLocation],locationPositionY1[darkElfLocation]-20.0f,0,0,100,1,0,darkElfLocation,1);
+instance.AddSpecifiedObjects(specialNPC[tempAlliedObjectNum+4]);
+break;
+case 9:
+
+break;
+case 10:
+
+
+instance.BroadcastEvent(50);
+instance.DestroyObject(47062232,true);
+
+instance.ChangeMISCStateById(47672540,9,false);
+instance.TimerRun(14,15.0f);
+break;
+
+case 11:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+instance.TimerRun(16,0.1f);
+break;
+case 12:
+if(tlspak==0)
+{
+instance.BroadcastEvent(3);
+tlspak=1;
+}
+instance.TimerRun(13,21.0f);
+PopNPCWithXY(1090.0f,794.7f,1191.0f,897.8f,8*((instance.GetActivePlayerCnt()+6.0f)/10.0f),12);
+instance.TimerRun(15,60.0f);
+location=12;
+
+break;
+case 13:
+instance.DisplayTextEvent(3,0,0);
+break;
+case 14:
+instance.DisplayTextEvent(3,1,0);
+break;
+case 15:
+if(BossClear==false){
+if(GearNum==-1){
+PopNPCWithXY(1090.0f,794.7f,1191.0f,897.8f,12*((instance.GetActivePlayerCnt()+6.0f)/10.0f)-TotalPopNum,63);
+instance.TimerRun(15,30.0f);
+}
+else{
+PopNPCWithXY(1090.0f,794.7f,1191.0f,897.8f,8*((instance.GetActivePlayerCnt()+6.0f)/10.0f)-TotalPopNum,12);
+instance.TimerRun(15,60.0f);
+}
+}
+break;
+case 16:
+instance.MissionClear(true,1);
+
+
+break;
+
+}
+}
+
+void ObjectEntered(int type,uint32 objectId,int location,uint8 team)
+{
+
+
+bool locationOK;
+locationOK=false;
+int roomNum;
+roomNum=GetRoomNumByLocation(presentLocation);
+
+
+
+
+
+switch(location)
+{
+case 64:
+instance.AddInterestLocation(64,false);
+instance.SecretFound();
+instance.BroadcastEvent(150);
+instance.GiveExpToAllPlayer(explevel,clearexp);
+break;
+
+case 65:
+instance.AddInterestLocation(65,false);
+instance.SecretFound();
+instance.BroadcastEvent(150);
+instance.GiveExpToAllPlayer(explevel,clearexp);
+break;
+}
+
+
+if(location==11&&BossCinema==false){
+BossCinema=true;
+instance.AddInterestLocation(11,false);
+instance.MoveAllPlayer(60);
+instance.BroadcastEvent(100);
+instance.TimerRun(12,8.0f);
+instance.ChangeMISCStateById(57731314,9,false);
+}
+else if(location==tempStartLocation)
+{
+instance.MovePlayer(objectId,startLocation);
+}
+else
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+
+citizenQuestTmp=false;
+for(int i=0;i<citizenQuestCnt;i++){if(objectId==citizenQuestPlayer[i]){citizenQuestTmp=true;break;}}
+
+if(!citizenQuestTmp)
+{
+if(citizenQuestCnt<8)
+{
+if(instance.GetQuestState(objectId,51784179)==0)
+{
+citizenQuestChk=true;
+citizenQuestPlayer[citizenQuestCnt]=objectId;
+citizenQuestCnt++;
+}
+}
+}
+
+locationOK=true;
+roomLocationPlayerNum[i]++;
+if(location==1)
+{
+RoomEntered(location);
+}
+else if(roomLocationPlayerNum[i]==instance.GetActivePlayerCnt())
+{
+RoomEntered(location);
+
+break;
+}
+else
+{
+instance.DisplayTextEvent(1,2,0);
+instance.AddMinimapPing(1,locationXLength[location]/2+locationPositionX1[location],locationYLength[location]/2+locationPositionY2[location],6);
+}
+break;
+}
+}
+if(!locationOK)
+{
+for(int j=0;j<roomEnteredWarpLocationNum[roomNum];j++)
+{
+if(roomEnteredWarpLocationFrom[roomNum*10+j]==location)
+{
+instance.MovePlayer(objectId,roomEnteredWarpLocationTo[roomNum*10+j]);
+locationOK=true;
+break;
+}
+}
+}
+if(!locationOK)
+{
+for(int j=0;j<roomClearedWarpLocationNum[roomNum];j++)
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(roomClearedWarpLocationFrom[roomNum*10+j]==location)
+{
+instance.MovePlayer(objectId,roomClearedWarpLocationTo[roomNum*10+j]);
+locationOK=true;
+break;
+}
+}
+}
+}
+switch(location){
+
+case 61:
+if(LocOn==false){
+instance.NoticeTextEvent(objectId,1,7,0);
+}
+break;
+}
+}
+
+void ObjectDestroyed(uint32 objectId,int type)
+{
+switch(objectId)
+{
+case 11025279:
+case 18673514:
+case 15498803:
+instance.TimerRun(16,0.1f);
+instance.DisplayTimer(16,2);
+instance.DisplayTextEvent(3,100,0);
+break;
+
+
+case 36612415:
+instance.AddInterestObjects(36612415,false);
+
+if(mimic==true)
+{
+instance.CreateNPCByPos(13406052,mimicx,mimicy,100,0,0,0,0);
+}
+else
+{
+if(SecretType[rnd]==1)
+{
+instance.CreateObjectByPosition(12105896,mimicx,mimicy,100);
+}
+if(SecretType[rnd]==2)
+{
+instance.CreateObjectByPosition(52792218,mimicx,mimicy,100);
+}
+if(SecretType[rnd]==3)
+{
+instance.CreateObjectByPosition(57117935,mimicx,mimicy,100);
+}
+}
+break;
+}
+
+
+if(objectId!=36612415)
+{
+switch(objectId){
+case 34839771:
+instance.AddInterestLocation(27,false);
+++popMonsterNum;
+instance.AddInterestObjects(34839771,false);
+instance.DisplayTextEvent(1,3,0);
+instance.LocPlayers(true);
+LocOn=true;
+
+
+AddMonsterToMonsterGroup(2,13000836,2,0);
+AddMonsterGroupAdditionalPop(1,0,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),0.0f,2,3*((instance.GetActivePlayerCnt()+6.0f)/10.0f),4*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+AddMonsterToMonsterGroup(3,50518329,1,0);
+AddMonsterToMonsterGroup(3,63976915,1,0);
+AddMonsterToMonsterGroup(3,13000836,2,0);
+AddMonsterGroupAdditionalPop(3,0,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),0.0f,3,3*((instance.GetActivePlayerCnt()+6.0f)/10.0f),4*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+AddMonsterToMonsterGroup(4,50518329,1,0);
+AddMonsterToMonsterGroup(4,63976915,1,0);
+AddMonsterToMonsterGroup(4,13000836,2,0);
+AddMonsterGroupAdditionalPop(4,0,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),0.0f,5,3*((instance.GetActivePlayerCnt()+6.0f)/10.0f),4*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddMonsterToMonsterGroup(5,23613398,2,0);
+AddMonsterToMonsterGroup(5,50518329,1,0);
+AddMonsterToMonsterGroup(5,13000836,1,0);
+
+AddMonsterToMonsterGroup(6,50518329,1,0);
+AddMonsterToMonsterGroup(6,63976915,1,0);
+AddMonsterToMonsterGroup(6,13000836,2,0);
+AddMonsterToMonsterGroup(6,23613398,1,0);
+AddMonsterGroupAdditionalPop(6,0,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),0.0f,7,3*((instance.GetActivePlayerCnt()+6.0f)/10.0f),4*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+AddMonsterToMonsterGroup(7,3511190,1,0);
+
+AddMonsterToMonsterGroup(8,50518329,2,0);
+AddMonsterToMonsterGroup(8,63976915,1,0);
+AddMonsterToMonsterGroup(8,15735096,1,1);
+AddMonsterToMonsterGroup(8,10163694,1,1);
+
+AddMonsterToMonsterGroup(9,50518329,2,0);
+AddMonsterToMonsterGroup(9,63976915,1,0);
+AddMonsterToMonsterGroup(9,13000836,2,0);
+AddMonsterToMonsterGroup(9,15735096,1,1);
+AddMonsterToMonsterGroup(9,10163694,1,1);
+
+
+AddRoomMonsterGroupProbMinMax(3,false,1,50,8*((instance.GetActivePlayerCnt()+6.0f)/10.0f),10*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddRoomMonsterGroupProbMinMax(5,false,3,50,8*((instance.GetActivePlayerCnt()+6.0f)/10.0f),10*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddRoomMonsterGroupProbMinMax(7,false,4,50,8*((instance.GetActivePlayerCnt()+6.0f)/10.0f),10*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddRoomMonsterGroupProbMinMax(9,false,6,50,8*((instance.GetActivePlayerCnt()+6.0f)/10.0f),10*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+
+AddRoomMonsterGroupProbMinMax(13,false,8,50,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),7*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddRoomMonsterGroupProbMinMax(15,false,8,50,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),7*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+AddRoomMonsterGroupProbMinMax(17,false,9,50,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),7*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddRoomMonsterGroupProbMinMax(19,false,9,50,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),7*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+AddRoomMonsterGroupProbMinMax(21,false,9,50,5*((instance.GetActivePlayerCnt()+6.0f)/10.0f),7*((instance.GetActivePlayerCnt()+6.0f)/10.0f));
+
+break;
+case 57731314:
+--GearNum;
+++popMonsterNum;
+switch(GearNum){
+case 1:
+instance.BroadcastEvent(4);
+break;
+case 0:
+GearNum=-1;
+instance.TimerRun(10,0.5f);
+instance.BroadcastEvent(5);
+instance.TimerRun(15,3.0f);
+break;
+}
+
+break;
+}
+
+int roomNum;
+int tempGroup;
+int tempMin;
+int tempMax;
+int tempNum;
+
+switch(objectId)
+{
+case 5450353:
+
+if(citizenQuestChk)
+{
+for(int i=0;i<citizenQuestCnt;i++)
+{
+
+if(!instance.ExamineItemSlotFromPlayer(citizenQuestPlayer[i],45761411,10))
+{
+instance.AddItemToPlayer(citizenQuestPlayer[i],45761411,1);
+
+}
+
+
+
+
+}
+}
+
+break;
+default:
+popMonsterNum--;
+break;
+}
+if(location==12){
+switch(objectId){
+case 58719743:
+case 14958186:
+case 1798672:
+case 62449197:
+case 26714605:
+--TotalPopNum;
+
+break;
+}
+}
+if(objectId==bossHash)
+{
+
+
+instance.TimerRun(16,0.1f);
+}
+else if(addtionalRoomLocationPop)
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==presentLocation&&roomLocationPopCount[i]>0&&roomLocationPopCount[i]>globalPopStep)
+{
+if(additionRoom[i*5+globalPopStep].popRemain>=popMonsterNum)
+{
+roomNum=GetRoomNumByLocation(presentLocation);
+tempGroup=additionRoom[roomNum*5+globalPopStep].popGroup;
+tempMin=additionRoom[roomNum*5+globalPopStep].popMinNum;
+tempMax=additionRoom[roomNum*5+globalPopStep].popMaxNum;
+if(tempMin<=tempMax&&tempMin>=0)tempNum=instance.GetRandomInt(tempMin,tempMax+1);
+else tempNum=0;
+CreateNPC(roomDefLocation[GetRoomNumByLocation(presentLocation)],tempGroup,tempNum,0,true);
+}
+}
+}
+}
+else if(addtionalMonsterGroupPop)
+{
+if(monsterGroupPopCount[globalNpcGroup]>0&&monsterGroupPopCount[globalNpcGroup]>globalPopStep)
+{
+if(additionGroup[globalNpcGroup*5+globalPopStep].popRemain>=popMonsterNum)
+{
+roomNum=GetRoomNumByLocation(presentLocation);
+tempGroup=additionGroup[globalNpcGroup*5+globalPopStep].popGroup;
+tempMin=additionGroup[globalNpcGroup*5+globalPopStep].popMinNum;
+tempMax=additionGroup[globalNpcGroup*5+globalPopStep].popMaxNum;
+if(tempMin<=tempMax&&tempMin>=0)tempNum=instance.GetRandomInt(tempMin,tempMax+1);
+else tempNum=0;
+CreateNPC(roomDefLocation[GetRoomNumByLocation(presentLocation)],tempGroup,tempNum,0,true);
+}
+}
+}
+else
+{
+switch(popMonsterNum)
+{
+case 0:
+globalPopStep=-1;
+
+
+
+
+
+
+RoomCleared(presentLocation);
+break;
+}
+}
+if(location!=11){
+
+}
+
+}
+
+
+
+}
+void InterestObjectDestroyed(uint32 serial)
+{
+if(darkElfLocationPop)
+{
+if(serial==specialNPC[tempAlliedObjectNum+4])
+{
+darkElfLocationPop=false;
+RoomCleared(darkElfLocation);
+instance.AddInterestObjectLocation(specialNPC[3],100.0f,false);
+popMonsterNum=0;
+for(int i=0;i<tempAlliedObjectNum+1;i++)
+{
+instance.ChangeNPCTeam(specialNPC[3+i],1);
+instance.ChangeNPCAction(specialNPC[3+i],20083512);
+}
+for(int i=0;i<itemUseCnt;i++)
+{
+if(instance.AddItemToPlayer(itemUsePlayer[i],49740266,1))
+{
+instance.NoticeTextEvent(itemUsePlayer[i],1,8,0);
+}
+else
+{
+instance.NoticeTextEvent(itemUsePlayer[i],1,9,0);
+instance.CreateItemInPositionById(itemUsePlayer[i],49740266,locationXLength[darkElfLocation]/2+locationPositionX1[darkElfLocation]+instance.GetRandomInt(-25,26),locationYLength[darkElfLocation]/2+locationPositionY2[darkElfLocation]+instance.GetRandomInt(-25,26));
+}
+}
+}
+else
+{
+for(int i=0;i<tempAlliedObjectNum+1;i++)
+{
+if(serial==specialNPC[3+i])
+{
+popMonsterNum--;
+switch(popMonsterNum)
+{
+case 0:
+globalPopStep=-1;
+
+
+darkElfLocationPop=false;
+RoomCleared(darkElfLocation);
+
+
+break;
+}
+break;
+}
+}
+}
+}
+if(serial==Boss2){
+BossClear=true;
+instance.TimerRun(11,0.1f);
+}
+}
+
+
+void ObjectLeft(int type,uint32 objectId,int location,uint8 team)
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+roomLocationPlayerNum[i]--;
+}
+}
+}
+
+void PlayerEntered(uint32 serial,uint8 team)
+{
+if(instance.GetPlayerName(serial)=="killingeve"||instance.GetPlayerName(serial)=="Anwounfreed"){
+instance.CreateObjectByPosition(RoyalSecret,170.88,267.577f,1);
+}
+}
+
+void NPCArrived(uint32 npcId,uint32 serial,int pathCnt,int posCnt)
+{
+
+}
+
+void GiveMissionClearExp()
+{
+instance.GiveExpToAllPlayer(71,3650);
+instance.GiveExpToAllPlayer(71,3650);
+}
+void Quest(uint32 objectId,int location)
+{
+}
+
+void ObjectEnteredObjectLocation(int type,uint32 objectId,uint32 location,uint8 team)
+{
+if(location==specialNPC[1])
+{
+instance.AddInterestObjectLocation(specialNPC[1],15.0f,false);
+instance.ChangeNPCAction(specialNPC[1],8495699);
+instance.DisplayTextEvent(0,4,0);
+instance.TimerRun(2,25.0f);
+}
+else if(location==specialNPC[2])
+{
+instance.AddInterestObjectLocation(specialNPC[2],15.0f,false);
+instance.ChangeNPCAction(specialNPC[2],43676894);
+instance.TimerRun(3,240.0f);
+instance.DisplayTextEvent(0,5,0);
+}
+else if(location==specialNPC[3])
+{
+if(specialEventPop)
+{
+
+itemUseTmp=false;
+for(int i=0;i<itemUseCnt;i++){if(objectId==itemUsePlayer[i]){itemUseTmp=true;break;}}
+
+if(!itemUseTmp)
+{
+if(itemUseCnt<8)
+{
+if(instance.ExamineItemSlotFromPlayer(objectId,23697423,1))
+{
+instance.RemoveItemFromPlayer(objectId,23697423,1);
+instance.NoticeTextEvent(objectId,0,10,0);
+itemUsePlayer[itemUseCnt]=objectId;
+itemUseCnt++;
+if(!itemChk)
+{
+instance.TimerRun(8,0.5f);
+itemChk=true;
+}
+if(itemUseCnt==instance.GetPlayerCnt())
+{
+instance.AddInterestObjectLocation(specialNPC[3],100.0f,false);
+}
+}
+}
+}
+}
+else
+{
+
+instance.AddInterestObjectLocation(specialNPC[3],15.0f,false);
+instance.ChangeNPCAction(specialNPC[3],48638641);
+instance.TimerRun(4,8.0f);
+darkElfLocationPop=true;
+
+
+SetRoomBlock(darkElfLocation,true);
+SetRoomEnteredWarp(darkElfLocation,true);
+SetRoomClearedWarp(darkElfLocation,false);
+instance.DisplayTextEvent(0,6,0);
+}
+}
+}
+
+
+void RoomEntered(int location)
+{
+int tempMonsterGroup;
+ObjectManager monster;
+
+if(location==DarkElfRoomNum){
+instance.AddInterestLocation(location,false);
+presentLocation=location;
+
+SetRoomBlock(location,true);
+SetRoomEnteredWarp(location,true);
+SetRoomClearedWarp(location,false);
+
+monster=GetMonsterGroupAndNumByRoomMonsterGroupProb(location);
+CreateAlliedObjects(DarkElfRoomNum+1,1,3);
+
+instance.DestroyObject(48033596,true);
+}
+else{
+instance.AddInterestLocation(location,false);
+presentLocation=location;
+
+SetRoomBlock(location,true);
+SetRoomEnteredWarp(location,true);
+SetRoomClearedWarp(location,false);
+
+monster=GetMonsterGroupAndNumByRoomMonsterGroupProb(location);
+CreateNPC(roomDefLocation[GetRoomNumByLocation(location)],monster.group,monster.num,0,true);
+
+instance.DestroyObject(48033596,true);
+
+}
+}
+void RoomCleared(int location)
+{
+if(location==9&&BossPop==false){
+BossPop=true;
+
+Boss2=instance.CreateObjectByPositionD(47672540,1256.22f,961.5942f,-1,-1,100);
+instance.AddSpecifiedObjects(Boss2);
+
+instance.CreateObjectByPosition(57731314,1132.45f,956.42f,100);
+instance.CreateObjectByPosition(57731314,1248.03f,836.58f,100);
+instance.AddInterestObjects(57731314,true);
+GearNum=2;
+CreateBlock(62,8,47062232,15);
+instance.CreateNPCByPosD(11928392,1165.29f,920.95f,-1,-1,100,0,0,0,1);
+instance.CreateNPCByPosD(11928392,1220.30f,864.44f,-1,-1,100,0,0,0,1);
+
+
+
+}
+roomCleared[GetRoomNumByLocation(location)]=true;
+SetRoomBlock(location,false);
+SetRoomEnteredWarp(location,false);
+SetRoomClearedWarp(location,true);
+SetRoomClearedNextRoomLocation(location);
+
+
+switch(location){
+case 1:
+instance.DestroyObject(9791246,true);
+break;
+case 3:
+instance.BroadcastEvent(2);
+break;
+case 17:
+switch(RandomMonsterGroupInt){
+case 0:
+instance.CreateItemInPosition(41356445,1130.41f,495.77f);
+break;
+}
+break;
+case 19:
+switch(RandomMonsterGroupInt){
+case 1:
+instance.CreateItemInPosition(41356445,273.03f,1013.67f);
+break;
+}
+break;
+case 21:
+switch(RandomMonsterGroupInt){
+case 2:
+instance.CreateItemInPosition(41356445,714.80f,1028.86f);
+break;
+}
+break;
+}
+
+}
+
+
+
+void CreateBlock(int location,int type,uint32 blockHash,float blockRadius)
+{
+int arrayNumber;
+int xRandom;
+int yRandom;
+int xd;
+int yd;
+float x;
+float y;
+
+
+switch(type)
+{
+case 0:case 1:case 4:case 5:
+arrayNumber=locationYLength[location]/2/blockRadius+0.5;
+break;
+case 2:case 3:case 6:case 7:
+arrayNumber=locationXLength[location]/2/blockRadius+0.5;
+break;
+case 8:case 9:case 10:case 11:
+arrayNumber=locationLength[location]/2/blockRadius+0.5;
+break;
+}
+switch(type)
+{
+case 0:case 4:case 12:case 20:
+xd=-1;
+yd=0;
+break;
+case 1:case 5:case 13:case 21:
+xd=1;
+yd=0;
+break;
+case 2:case 6:case 14:case 22:
+xd=0;
+yd=-1;
+break;
+case 3:case 7:case 15:case 23:
+xd=0;
+yd=1;
+break;
+case 8:case 16:
+xd=-1;
+yd=-1;
+break;
+case 9:case 17:
+xd=1;
+yd=1;
+break;
+case 10:case 18:
+xd=-1;
+yd=1;
+break;
+case 11:case 19:
+xd=1;
+yd=-1;
+break;
+}
+
+if(type<12)
+{
+for(int j=0;j<arrayNumber;++j)
+{
+switch(type)
+{
+case 0:
+x=locationPositionX1[location]+blockRadius;
+y=locationPositionY2[location]+blockRadius+j*blockRadius*2.0f;
+break;
+case 1:
+x=locationPositionX2[location]-blockRadius;
+y=locationPositionY2[location]+blockRadius+j*blockRadius*2.0f;
+break;
+case 2:
+x=locationPositionX1[location]+blockRadius+j*blockRadius*2.0f;
+y=locationPositionY2[location]+blockRadius;
+break;
+case 3:
+x=locationPositionX1[location]+blockRadius+j*blockRadius*2.0f;
+y=locationPositionY1[location]-blockRadius;
+break;
+case 4:
+case 5:
+x=locationXLength[location]/2+locationPositionX1[location];
+y=locationPositionY2[location]+blockRadius+j*blockRadius*2.0f;
+break;
+case 6:
+case 7:
+x=locationPositionX1[location]+blockRadius+j*blockRadius*2.0f;
+y=locationYLength[location]/2+locationPositionY2[location];
+break;
+case 8:
+case 9:
+x=locationPositionX1[location]+(locationXLength[location]/arrayNumber)*(j+0.5f);
+y=locationPositionY1[location]-(locationYLength[location]/arrayNumber)*(j+0.5f);
+break;
+case 10:
+case 11:
+x=locationPositionX1[location]+(locationXLength[location]/arrayNumber)*(j+0.5f);
+y=locationPositionY2[location]+(locationYLength[location]/arrayNumber)*(j+0.5f);
+break;
+}
+instance.CreateObjectByPositionD(blockHash,x,y,xd,yd,100);
+}
+}
+else
+{
+switch(type)
+{
+case 12:
+x=locationPositionX1[location]+blockRadius;
+y=locationYLength[location]/2+locationPositionY2[location];
+break;
+case 13:
+x=locationPositionX2[location]-blockRadius;
+y=locationYLength[location]/2+locationPositionY2[location];
+break;
+case 14:
+x=locationXLength[location]/2+locationPositionX1[location];
+y=locationPositionY2[location]+blockRadius;
+break;
+case 15:
+x=locationXLength[location]/2+locationPositionX1[location];
+y=locationPositionY1[location]-blockRadius;
+break;
+case 16:
+x=locationPositionX1[location]+blockRadius;
+y=locationPositionY1[location]-blockRadius;
+break;
+case 17:
+x=locationPositionX2[location]-blockRadius;
+y=locationPositionY2[location]+blockRadius;
+break;
+case 18:
+x=locationPositionX2[location]-blockRadius;
+y=locationPositionY1[location]-blockRadius;
+break;
+case 19:
+x=locationPositionX1[location]+blockRadius;
+y=locationPositionY2[location]+blockRadius;
+break;
+case 20:
+case 21:
+case 22:
+case 23:
+x=locationXLength[location]/2+locationPositionX1[location];
+y=locationYLength[location]/2+locationPositionY2[location];
+break;
+}
+instance.CreateObjectByPositionD(blockHash,x,y,xd,yd,100);
+}
+}
+
+
+void CreateMISC(int location,int miscGroup,int miscPopNum,int type,bool reset)
+{
+int miscCnt;
+uint32 tempRoomMISCNum;
+
+miscCnt=0;
+tempRoomMISCNum=0;
+
+SetLocationPosition(location,type,reset);
+
+if(miscPopNum>=0)
+{
+for(int i=1;i<miscPopNum+1;i++)
+{
+tempRoomMISCNum=GetRandomRoomMISCByProb(miscGroup);
+switch(miscType[tempRoomMISCNum])
+{
+case 0:
+instance.CreateObjectByPosition(miscHash[tempRoomMISCNum],roomObjectX[i],roomObjectY[i],100);
+break;
+case 1:
+instance.CreateObjectByPosition(miscHash[tempRoomMISCNum],roomObjectX[i],roomObjectY[i],100);
+break;
+case 2:
+instance.CreateObjectByPosition(miscHash[tempRoomMISCNum],roomObjectX[i],roomObjectY[i],100);
+break;
+case 3:
+instance.CreateObjectByPosition(miscHash[tempRoomMISCNum],roomObjectX[i],roomObjectY[i],100);
+break;
+}
+}
+}
+
+
+
+
+}
+
+
+
+void CreateNPC(int location,int npcGroup,int npcPopNum,int type,bool reset)
+{
+int monsterCnt;
+uint32 tempRoomMonsterNum;
+globalPopStep++;
+monsterCnt=0;
+tempRoomMonsterNum=0;
+if(globalPopStep==0)globalNpcGroup=npcGroup;
+
+SetLocationPosition(location,type,reset);
+
+if(npcPopNum>=0)
+{
+for(int i=1;i<npcPopNum+1;i++)
+{
+tempRoomMonsterNum=GetRandomRoomMonsterByProb(npcGroup);
+switch(monsterType[tempRoomMonsterNum])
+{
+case 0:
+instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],roomObjectX[i],roomObjectY[i],100,1,0,location,0);
+break;
+
+case 1:
+instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],roomObjectX[i],roomObjectY[i],100,0,0,0,0);
+break;
+case 2:
+instance.BroadcastEvent(100);
+
+instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],locationXLength[location]/2+locationPositionX1[location],locationYLength[location]/2+locationPositionY2[location],100,1,0,location,0);
+xBB=locationXLength[location]/2+locationPositionX1[location];
+yBB=locationYLength[location]/2+locationPositionY2[location];
+bossHash=monsterHash[tempRoomMonsterNum];
+break;
+case 3:
+instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],locationXLength[location]/2+locationPositionX1[location],locationYLength[location]/2+locationPositionY2[location],100,1,0,location,0);
+popMonsterNum++;
+break;
+case 4:
+tempSerial=instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],roomObjectX[i],roomObjectY[i],1,1,0,location,0);
+instance.AddSpecifiedObjects(tempSerial);
+break;
+case 5:
+tempSerial=instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],roomObjectX[i],roomObjectY[i],1,0,0,0,0);
+instance.AddSpecifiedObjects(tempSerial);
+break;
+case 6:
+tempSerial=instance.CreateNPCByPos(monsterHash[tempRoomMonsterNum],locationXLength[location]/2+locationPositionX1[location],locationYLength[location]/2+locationPositionY2[location],1,1,0,location,0);
+instance.AddSpecifiedObjects(tempSerial);
+break;
+
+}
+popMonsterNum++;
+}
+}
+
+
+
+
+
+
+bool roomPop;
+roomPop=true;
+addtionalRoomLocationPop=false;
+addtionalMonsterGroupPop=false;
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==presentLocation)
+{
+if(roomLocationPopCount[i]>0&&roomLocationPopCount[i]>globalPopStep)
+{
+if(additionRoom[i*5+globalPopStep].popRemain>=0)
+{
+addtionalRoomLocationPop=true;
+}
+else
+{
+instance.TimerRun(0,additionRoom[i*5+globalPopStep].popTime);
+}
+
+break;
+}
+else
+{
+roomPop=false;
+break;
+}
+}
+else if(i==roomLocationNum-1)roomPop=false;
+}
+if(!roomPop)
+{
+if(monsterGroupPopCount[globalNpcGroup]>0&&monsterGroupPopCount[globalNpcGroup]>globalPopStep)
+{
+if(additionGroup[globalNpcGroup*5+globalPopStep].popRemain>=0)
+{
+addtionalMonsterGroupPop=true;
+}
+else
+{
+instance.TimerRun(1,additionGroup[globalNpcGroup*5+globalPopStep].popTime);
+}
+}
+}
+
+}
+
+
+void SetRoomClearedNextRoomLocation(int location)
+{
+int roomNum;
+roomNum=GetRoomNumByLocation(location);
+for(int i=0;i<roomClearedNextRoomLocationNum[roomNum];i++)
+{
+if(!roomCleared[GetRoomNumByLocation(roomClearedNextRoomLocation[roomNum*10+i])])instance.AddInterestLocation(roomClearedNextRoomLocation[roomNum*10+i],true);
+}
+}
+
+
+void SetRoomBlock(int location,bool onOff)
+{
+int roomNum;
+int param;
+roomNum=GetRoomNumByLocation(location);
+for(int i=0;i<roomBlockLocationNum[roomNum];i++)
+{
+param=roomNum*10+i;
+if(onOff)
+{
+CreateBlock(roomBlockLocation[param],roomBlockType[param],9791246,7.0f);
+}
+else
+{
+instance.DestroyObjectFromLocationById(9791246,roomBlockLocation[param],true);
+}
+}
+}
+void SetRoomEnteredWarp(int location,bool onOff)
+{
+int roomNum;
+roomNum=GetRoomNumByLocation(location);
+for(int i=0;i<roomEnteredWarpLocationNum[roomNum];i++)
+{
+instance.AddInterestLocation(roomEnteredWarpLocationFrom[roomNum*10+i],onOff);
+}
+}
+
+void SetRoomClearedWarp(int location,bool onOff)
+{
+int roomNum;
+roomNum=GetRoomNumByLocation(location);
+for(int i=0;i<roomClearedWarpLocationNum[roomNum];i++)
+{
+instance.AddInterestLocation(roomClearedWarpLocationFrom[roomNum*10+i],onOff);
+if(onOff==false){
+
+instance.DestroyObjectFromLocationById(48033596,roomClearedWarpLocationFrom[roomNum*10+i],true);
+}
+else if(roomClearedWarpLocationFrom[roomNum*10+i]==25||roomClearedWarpLocationFrom[roomNum*10+i]==33||roomClearedWarpLocationFrom[roomNum*10+i]==41||
+roomClearedWarpLocationFrom[roomNum*10+i]==49||roomClearedWarpLocationFrom[roomNum*10+i]==57||
+roomClearedWarpLocationFrom[roomNum*10+i]==27||roomClearedWarpLocationFrom[roomNum*10+i]==29||roomClearedWarpLocationFrom[roomNum*10+i]==35||
+roomClearedWarpLocationFrom[roomNum*10+i]==37||roomClearedWarpLocationFrom[roomNum*10+i]==43||roomClearedWarpLocationFrom[roomNum*10+i]==45||
+roomClearedWarpLocationFrom[roomNum*10+i]==51||roomClearedWarpLocationFrom[roomNum*10+i]==53||roomClearedWarpLocationFrom[roomNum*10+i]==59){
+CreateBlock(roomClearedWarpLocationFrom[roomNum*10+i],20,48033596,10);
+}
+}
+}
+
+void SetStartLocationByTempLocation(int location)
+{
+tempStartLocation=location;
+instance.AddInterestLocation(location,true);
+if(roomStartLocationNum>0)
+{
+startLocation=roomStartLocation[instance.GetRandomInt(0,roomStartLocationNum)];
+}
+else startLocation=roomStartLocation[0];
+
+SetRoomClearedNextRoomLocation(startLocation);
+roomCleared[GetRoomNumByLocation(startLocation)]=true;
+
+presentLocation=startLocation;
+
+
+instance.CreateItemInPosition(47323906,locationXLength[startLocation]/2+locationPositionX1[startLocation],locationYLength[startLocation]/2+locationPositionY2[startLocation]-20.0f);
+
+
+
+int tempNum1;
+int tempNum2;
+int tempNum3;
+
+do
+{
+tempNum1=instance.GetRandomInt(0,8);
+}while(tempNum1==startLocation);
+roomSpecialType[tempNum1]=1;
+
+do
+{
+tempNum2=instance.GetRandomInt(0,8);
+}while(tempNum2==startLocation||tempNum2==tempNum1);
+roomSpecialType[tempNum2]=2;
+
+do
+{
+tempNum3=instance.GetRandomInt(0,8);
+}while(tempNum3==startLocation||tempNum3==tempNum1||tempNum3==tempNum2);
+roomSpecialType[tempNum3]=3;
+
+darkElfLocation=roomMainLocation[tempNum3];
+
+}
+
+int GetRoomNumByLocation(int location)
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+return i;
+}
+}
+
+return 0;
+}
+
+uint32 GetRandomRoomMonsterByProb(int monsterGroup)
+{
+int tempProb;
+int tempMonsterProb;
+
+int tempProbPlus;
+tempProbPlus=0;
+tempProb=0;
+tempMonsterProb=0;
+
+for(int i=monsterGroupIndexStart[monsterGroup];i<monsterGroupIndexEnd[monsterGroup];i++)
+{
+tempProb=tempProb+monsterProbability[i];
+}
+
+
+if(tempProb>0)tempMonsterProb=instance.GetRandomInt(0,tempProb);
+else
+{
+
+return 0;
+}
+
+
+for(int i=monsterGroupIndexStart[monsterGroup];i<monsterGroupIndexEnd[monsterGroup];i++)
+{
+if(tempMonsterProb<(tempProbPlus+=monsterProbability[i]))
+{
+
+
+return i;
+}
+else if(tempMonsterProb>=tempProbPlus&&i==monsterGroupIndexEnd[monsterGroup]-1){instance.DisplayText(0,"GetRandomRoomMonsterByProbï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½ï¿½Ä¡ï¿½ï¿½");return 0;}
+}
+return 0;
+}
+
+ObjectManager GetMonsterGroupAndNumByRoomMonsterGroupProb(int location)
+{
+ObjectManager tempMonster;
+int tempProb;
+int tempMonsterGroupProb;
+int tempProbPlus;
+int tempType;
+int tempGroup;
+int tempMin;
+int tempMax;
+int roomNum;
+
+tempProbPlus=0;
+tempProb=0;
+tempMonsterGroupProb=0;
+tempType=0;
+tempGroup=0;
+tempMin=0;
+tempMax=0;
+
+
+
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location&&roomMonsterGroupNum[i]>0)
+{
+roomNum=i;
+for(int j=0;j<roomMonsterGroupNum[i];j++)
+{
+tempProb=tempProb+roomMonsterGroupProb[i*10+j];
+tempType=1;
+}
+if(roomMonsterGroupDuplication[i])
+{
+tempProb=tempProb+allRoomMonsterGroupProb;
+tempType=2;
+}
+break;
+}
+else if(i==roomLocationNum-1)tempProb=allRoomMonsterGroupProb;
+}
+
+if(tempProb>0)tempMonsterGroupProb=instance.GetRandomInt(0,tempProb);
+else
+{
+
+tempMonster.group=0;
+tempMonster.num=0;
+return tempMonster;
+}
+switch(tempType)
+{
+case 2:
+if(tempMonsterGroupProb<allRoomMonsterGroupProb)tempType=0;
+else
+{
+tempMonsterGroupProb=tempMonsterGroupProb-allRoomMonsterGroupProb;
+tempType=1;
+}
+break;
+}
+switch(tempType)
+{
+case 0:
+for(int i=0;i<allRoomMonsterGroupNum;i++)
+{
+tempGroup=allRoomMonsterGroup[i];
+tempMin=allRoomMonsterGroupMin[i];
+tempMax=allRoomMonsterGroupMax[i];
+if(tempMonsterGroupProb<(tempProbPlus+=allRoomMonsterGroupProbability[i]))
+{
+tempMonster.group=tempGroup;
+if(tempMin<=tempMax&&tempMin>=0)tempMonster.num=instance.GetRandomInt(tempMin,tempMax+1);
+else tempMonster.num=0;
+return tempMonster;
+}
+else if(tempMonsterGroupProb>=tempProbPlus&&i==allRoomMonsterGroupNum-1)
+{
+
+tempMonster.group=0;
+tempMonster.num=0;
+return tempMonster;
+}
+}
+break;
+case 1:
+for(int i=0;i<roomMonsterGroupNum[roomNum];i++)
+{
+
+
+
+
+tempGroup=roomMonsterGroup[roomNum*10+i];
+tempMin=roomMonsterGroupMin[roomNum*10+i];
+tempMax=roomMonsterGroupMax[roomNum*10+i];
+if(tempMonsterGroupProb<(tempProbPlus+=roomMonsterGroupProb[roomNum*10+i]))
+{
+tempMonster.group=tempGroup;
+if(tempMin<=tempMax&&tempMin>=0)tempMonster.num=instance.GetRandomInt(tempMin,tempMax+1);
+else tempMonster.num=0;
+return tempMonster;
+}
+else if(tempMonsterGroupProb>=tempProbPlus&&i==roomMonsterGroupNum[roomNum]-1)
+{
+
+tempMonster.group=0;
+tempMonster.num=0;
+return tempMonster;
+}
+}
+break;
+}
+return tempMonster;
+}
+
+uint32 GetRandomRoomMISCByProb(int miscGroup)
+{
+int tempProb;
+int tempMISCProb;
+
+int tempProbPlus;
+tempProbPlus=0;
+tempProb=0;
+tempMISCProb=0;
+
+for(int i=miscGroupIndexStart[miscGroup];i<miscGroupIndexEnd[miscGroup];i++)
+{
+tempProb=tempProb+miscProbability[i];
+}
+
+
+if(tempProb>0)tempMISCProb=instance.GetRandomInt(0,tempProb);
+else
+{
+
+return 0;
+}
+
+
+for(int i=miscGroupIndexStart[miscGroup];i<miscGroupIndexEnd[miscGroup];i++)
+{
+if(tempMISCProb<(tempProbPlus+=miscProbability[i]))
+{
+
+
+return i;
+}
+else if(tempMISCProb>=tempProbPlus&&i==miscGroupIndexEnd[miscGroup]-1){instance.DisplayText(0,"GetRandomRoomMISCByProbï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½ï¿½Ä¡ï¿½ï¿½");return 0;}
+}
+return 0;
+}
+
+ObjectManager GetMISCGroupAndNumByRoomMISCGroupProb(int location)
+{
+ObjectManager tempMISC;
+int tempProb;
+int tempMISCGroupProb;
+int tempProbPlus;
+int tempType;
+int tempGroup;
+int tempMin;
+int tempMax;
+int roomNum;
+
+tempProbPlus=0;
+tempProb=0;
+tempMISCGroupProb=0;
+tempType=0;
+tempGroup=0;
+tempMin=0;
+tempMax=0;
+
+
+
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location&&roomMISCGroupNum[i]>0)
+{
+roomNum=i;
+for(int j=0;j<roomMISCGroupNum[i];j++)
+{
+tempProb=tempProb+roomMISCGroupProb[i*10+j];
+tempType=2;
+}
+if(roomMISCGroupDuplication[i])
+{
+tempProb=tempProb+allRoomMISCGroupProb;
+tempType=1;
+}
+break;
+}
+else if(i==roomLocationNum-1)tempProb=allRoomMISCGroupProb;
+}
+
+if(tempProb>0)tempMISCGroupProb=instance.GetRandomInt(0,tempProb);
+else
+{
+
+tempMISC.group=0;
+tempMISC.num=0;
+return tempMISC;
+}
+switch(tempType)
+{
+case 2:
+if(tempMISCGroupProb<allRoomMISCGroupProb)tempType=0;
+else
+{
+tempMISCGroupProb=tempMISCGroupProb-allRoomMISCGroupProb;
+tempType=1;
+}
+break;
+}
+switch(tempType)
+{
+case 0:
+for(int i=0;i<allRoomMISCGroupNum;i++)
+{
+tempGroup=allRoomMISCGroup[i];
+tempMin=allRoomMISCGroupMin[i];
+tempMax=allRoomMISCGroupMax[i];
+if(tempMISCGroupProb<(tempProbPlus+=allRoomMISCGroupProbability[i]))
+{
+tempMISC.group=tempGroup;
+if(tempMin<=tempMax&&tempMin>=0)tempMISC.num=instance.GetRandomInt(tempMin,tempMax+1);
+else tempMISC.num=0;
+return tempMISC;
+}
+else if(tempMISCGroupProb>=tempProbPlus&&i==allRoomMISCGroupNum-1)
+{
+
+tempMISC.group=0;
+tempMISC.num=0;
+return tempMISC;
+}
+}
+break;
+case 1:
+for(int i=0;i<roomMISCGroupNum[roomNum];i++)
+{
+tempGroup=roomMISCGroup[roomNum*10+roomMISCGroupNum[i]];
+tempMin=roomMISCGroupMin[roomNum*10+roomMISCGroupNum[i]];
+tempMax=roomMISCGroupMax[roomNum*10+roomMISCGroupNum[i]];
+if(tempMISCGroupProb<(tempProbPlus+=roomMISCGroupProb[roomNum*10+roomMISCGroupNum[i]]))
+{
+tempMISC.group=tempGroup;
+if(tempMin<=tempMax&&tempMin>=0)tempMISC.num=instance.GetRandomInt(tempMin,tempMax+1);
+else tempMISC.num=0;
+return tempMISC;
+}
+else if(tempMISCGroupProb>=tempProbPlus&&i==roomMISCGroupNum[roomNum]-1)
+{
+
+tempMISC.group=0;
+tempMISC.num=0;
+return tempMISC;
+}
+}
+break;
+}
+return tempMISC;
+}
+
+
+
+void CreateSpecialNPC(int location,uint32 npcHash,uint32 serial,float radius,float coolTime,uint32 action)
+{
+}
+
+
+void SetWarp(int fromLocation,int toLocation,bool onOff,uint32 warpHash)
+{
+}
+
+
+
+
+void SetLocationPosition(int location,int type,bool reset)
+{
+float temp;
+int tempRnd;
+
+for(int i=1;i<monsterPosNum;i++)
+{
+roomObjectX[i]=(locationPositionX2[location]-locationPositionX1[location])/monsterPosNum*i+locationPositionX1[location];
+roomObjectY[i]=(locationPositionY1[location]-locationPositionY2[location])/monsterPosNum*i+locationPositionY2[location];
+roomObjectXD[i]=0;
+roomObjectYD[i]=0;
+}
+
+
+for(int i=1;i<monsterPosNum;i++)
+{
+tempRnd=instance.GetRandomInt(1,monsterPosNum);
+temp=roomObjectX[i];
+roomObjectX[i]=roomObjectX[tempRnd];
+roomObjectX[tempRnd]=temp;
+}
+for(int i=1;i<monsterPosNum;i++)
+{
+tempRnd=instance.GetRandomInt(1,monsterPosNum);
+temp=roomObjectY[i];
+roomObjectY[i]=roomObjectY[tempRnd];
+roomObjectY[tempRnd]=temp;
+}
+}
+
+
+void AddLocationPosition(float x1,float y1,float x2,float y2,float x,float y,float length)
+{
+if(locationPositionNum<locationPositionNumMax&&locationPositionNum>=0)
+{
+locationPositionX1[locationPositionNum]=x1;
+locationPositionY1[locationPositionNum]=y1;
+locationPositionX2[locationPositionNum]=x2;
+locationPositionY2[locationPositionNum]=y2;
+locationXLength[locationPositionNum]=x;
+locationYLength[locationPositionNum]=y;
+locationLength[locationPositionNum]=length;
+locationPositionNum++;
+}
+
+}
+
+
+void AddRoomLocation(int location,int defLocation)
+{
+if(roomLocationNum<roomLocationNumMax&&roomLocationNum>=0)
+{
+roomMainLocation[roomLocationNum]=location;
+roomDefLocation[roomLocationNum]=defLocation;
+
+roomSpecialType[roomLocationNum]=0;
+roomLocationPlayerNum[roomLocationNum]=0;
+roomLocationPopCount[roomLocationNum]=0;
+
+roomBlockLocationNum[roomLocationNum]=0;
+roomEnteredWarpLocationNum[roomLocationNum]=0;
+roomClearedWarpLocationNum[roomLocationNum]=0;
+roomClearedNextRoomLocationNum[roomLocationNum]=0;
+
+roomCleared[roomLocationNum]=false;
+roomMonsterGroupDuplication[roomLocationNum]=false;
+roomMonsterGroupNum[roomLocationNum]=0;
+
+roomLocationNum++;
+}
+
+}
+
+
+void AddRoomBlockLocation(int location,int blockLocation,int blockType)
+{
+
+
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+if(roomBlockLocationNum[i]<10)
+{
+roomBlockLocation[i*10+roomBlockLocationNum[i]]=blockLocation;
+roomBlockType[i*10+roomBlockLocationNum[i]]=blockType;
+roomBlockLocationNum[i]++;
+}
+
+break;
+}
+else if(i==roomLocationNum-1)instance.DisplayText(0,"AddRoomBlockLocationï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Í¾ï¿½ï¿½ï¿½");
+}
+
+
+}
+
+
+void AddRoomEnteredWarpLocation(int location,int fromLocation,int toLocation)
+{
+
+
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+if(roomEnteredWarpLocationNum[i]<10)
+{
+roomEnteredWarpLocationFrom[i*10+roomEnteredWarpLocationNum[i]]=fromLocation;
+roomEnteredWarpLocationTo[i*10+roomEnteredWarpLocationNum[i]]=toLocation;
+roomEnteredWarpLocationNum[i]++;
+}
+else instance.DisplayText(0,"AddRoomEnteredWarpLocation(roomEnteredWarpLocationNum)ï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½Ï³ï¿½ï¿½ï¿½room(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ 10ï¿½ï¿½ ï¿½Ê°ï¿½");
+break;
+}
+else if(i==roomLocationNum-1)instance.DisplayText(0,"AddRoomEnteredWarpLocationï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Í¾ï¿½ï¿½ï¿½");
+}
+
+
+}
+
+
+void AddRoomClearedWarpLocation(int location,int fromLocation,int toLocation)
+{
+
+
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+if(roomClearedWarpLocationNum[i]<10)
+{
+roomClearedWarpLocationFrom[i*10+roomClearedWarpLocationNum[i]]=fromLocation;
+roomClearedWarpLocationTo[i*10+roomClearedWarpLocationNum[i]]=toLocation;
+roomClearedWarpLocationNum[i]++;
+}
+else instance.DisplayText(0,"AddRoomClearedWarpLocation(roomClearedWarpLocationNum)ï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½Ï³ï¿½ï¿½ï¿½room(Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ 10ï¿½ï¿½ ï¿½Ê°ï¿½");
+break;
+}
+else if(i==roomLocationNum-1)instance.DisplayText(0,"AddRoomClearedWarpLocationï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Í¾ï¿½ï¿½ï¿½");
+}
+
+
+}
+
+
+void AddRoomClearedNextRoomLocation(int location,int nextRoomLocation)
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location)
+{
+if(roomClearedNextRoomLocationNum[i]<10)
+{
+roomClearedNextRoomLocation[i*10+roomClearedNextRoomLocationNum[i]]=nextRoomLocation;
+roomClearedNextRoomLocationNum[i]++;
+}
+else instance.DisplayText(0,"AddRoomClearedNextRoomLocation(roomClearedNextRoomLocation)ï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½Ï³ï¿½ï¿½ï¿½room(Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ 10ï¿½ï¿½ ï¿½Ê°ï¿½");
+break;
+}
+else if(i==roomLocationNum-1)instance.DisplayText(0,"AddRoomClearedNextRoomLocationï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½æ¼³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Í¾ï¿½ï¿½ï¿½");
+}
+}
+
+
+
+void AddMISCToMISCGroup(int miscGroupNum,uint32 mHash,int probability,int mType)
+{
+if(miscNum<miscNumMax)
+{
+miscGroup[miscNum]=miscGroupNum;
+if(miscNum>0)
+{
+if(miscGroup[miscNum]!=miscGroup[miscNum-1])
+{
+miscGroupIndexStart[miscGroup[miscNum]]=miscNum;
+}
+}
+else if(miscNum==0)miscGroupIndexStart[miscGroup[miscNum]]=miscNum;
+}
+else instance.DisplayText(0,"miscNumï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½ï¿½Ä¡ï¿½ï¿½");
+miscHash[miscNum]=mHash;
+
+miscProbability[miscNum]=probability;
+miscType[miscNum]=mType;
+miscNum++;
+if(miscNum>=miscNumMax)instance.DisplayText(0,"miscNumï¿½ï¿½ï¿½Æ´ï¿½. ï¿½ï¿½Ä¡ï¿½ï¿½");
+
+miscGroupIndexEnd[miscGroup[miscNum-1]]=miscNum;
+}
+
+
+void AddMonsterToMonsterGroup(int monsterGroupNum,uint32 mHash,int probability,int mType)
+{
+if(monsterNum<monsterNumMax)
+{
+monsterGroup[monsterNum]=monsterGroupNum;
+if(monsterNum>0)
+{
+if(monsterGroup[monsterNum]!=monsterGroup[monsterNum-1])
+{
+monsterGroupIndexStart[monsterGroup[monsterNum]]=monsterNum;
+monsterGroupPopCount[monsterGroup[monsterNum]]=0;
+}
+}
+else if(monsterNum==0)
+{
+monsterGroupIndexStart[monsterGroup[monsterNum]]=monsterNum;
+monsterGroupPopCount[monsterGroup[monsterNum]]=0;
+}
+}
+else instance.DisplayText(0,"monsterNumï¿½ï¿½ ï¿½ï¿½ï¿½Æ´ï¿½. ï¿½ï¿½Ä¡ï¿½ï¿½");
+monsterHash[monsterNum]=mHash;
+instance.AddInterestObjects(mHash,true);
+monsterProbability[monsterNum]=probability;
+monsterType[monsterNum]=mType;
+monsterNum++;
+if(monsterNum>=monsterNumMax)instance.DisplayText(0,"monsterNumï¿½ï¿½ï¿½Æ´ï¿½. ï¿½ï¿½Ä¡ï¿½ï¿½");
+
+monsterGroupIndexEnd[monsterGroup[monsterNum-1]]=monsterNum;
+}
+
+
+
+
+
+void AddMonsterGroupAdditionalPop(int monsterGroup,int popStep,int remainMonster,float popT,int popMonsterGroup,int popMonsterMinNum,int popMonsterMaxNum)
+{
+if(monsterGroup<monsterNumMax&&monsterGroup>=0&&popStep<5&&popStep>=0)
+{
+additionGroup[monsterGroup*5+popStep].popRemain=remainMonster;
+additionGroup[monsterGroup*5+popStep].popGroup=popMonsterGroup;
+additionGroup[monsterGroup*5+popStep].popMinNum=popMonsterMinNum;
+additionGroup[monsterGroup*5+popStep].popMaxNum=popMonsterMaxNum;
+additionGroup[monsterGroup*5+popStep].popTime=popT;
+monsterGroupPopCount[monsterGroup]=popStep+1;
+}
+}
+
+void AddRoomLocationAdditionalPop(int roomLocation,int popStep,int remainMonster,float popT,int popMonsterGroup,int popMonsterMinNum,int popMonsterMaxNum)
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==roomLocation)
+{
+if(popStep<5&&popStep>=0)
+{
+additionRoom[i*5+popStep].popRemain=remainMonster;
+additionRoom[i*5+popStep].popGroup=popMonsterGroup;
+additionRoom[i*5+popStep].popMinNum=popMonsterMinNum;
+additionRoom[i*5+popStep].popMaxNum=popMonsterMaxNum;
+additionRoom[i*5+popStep].popTime=popT;
+roomLocationPopCount[i]=popStep+1;
+}
+break;
+}
+else if(i==roomLocationNum-1)instance.DisplayText(0,"AddRoomLocationAdditionalPopï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Í¾ï¿½ï¿½ï¿½");
+}
+}
+
+
+
+
+
+
+void AddRoomMonsterGroupProbMinMax(int location,bool duplication,int groupNum,int groupProb,int groupMin,int groupMax)
+{
+if(allRoomMonsterGroupNum<roomLocationNumMax&&location==-1)
+{
+allRoomMonsterGroup[allRoomMonsterGroupNum]=groupNum;
+allRoomMonsterGroupProbability[allRoomMonsterGroupNum]=groupProb;
+allRoomMonsterGroupMin[allRoomMonsterGroupNum]=groupMin;
+allRoomMonsterGroupMax[allRoomMonsterGroupNum]=groupMax;
+
+allRoomMonsterGroupProb=allRoomMonsterGroupProb+groupProb;
+allRoomMonsterGroupNum++;
+}
+else
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location&&roomMonsterGroupNum[i]<10)
+{
+roomMonsterGroupDuplication[i]=duplication;
+roomMonsterGroup[i*10+roomMonsterGroupNum[i]]=groupNum;
+roomMonsterGroupProb[i*10+roomMonsterGroupNum[i]]=groupProb;
+roomMonsterGroupMin[i*10+roomMonsterGroupNum[i]]=groupMin;
+roomMonsterGroupMax[i*10+roomMonsterGroupNum[i]]=groupMax;
+roomMonsterGroupNum[i]++;
+}
+
+}
+}
+}
+
+
+void AddRoomMISCGroupProbMinMax(int location,bool duplication,int groupNum,int groupProb,int groupMin,int groupMax)
+{
+if(allRoomMISCGroupNum<roomLocationNumMax&&location==-1)
+{
+allRoomMISCGroup[allRoomMISCGroupNum]=groupNum;
+allRoomMISCGroupProbability[allRoomMISCGroupNum]=groupProb;
+allRoomMISCGroupMin[allRoomMISCGroupNum]=groupMin;
+allRoomMISCGroupMax[allRoomMISCGroupNum]=groupMax;
+
+allRoomMISCGroupProb=allRoomMISCGroupProb+groupProb;
+allRoomMISCGroupNum++;
+}
+else
+{
+for(int i=0;i<roomLocationNum;i++)
+{
+if(roomMainLocation[i]==location&&roomMISCGroupNum[i]<10)
+{
+roomMISCGroupDuplication[i]=duplication;
+roomMISCGroup[i*10+roomMISCGroupNum[i]]=groupNum;
+roomMISCGroupProb[i*10+roomMISCGroupNum[i]]=groupProb;
+roomMISCGroupMin[i*10+roomMISCGroupNum[i]]=groupMin;
+roomMISCGroupMax[i*10+roomMISCGroupNum[i]]=groupMax;
+roomMISCGroupNum[i]++;
+}
+
+}
+}
+}
+
+void AddRoomStartLocation(int location)
+{
+roomStartLocation[roomStartLocationNum]=location;
+roomStartLocationNum=roomStartLocationNum+1;
+}
+
+
+
+
+
+void CreateBlockEffectByX(int number,float x,float y)
+{
+float[]xArray(number);
+float[]yArray(number);
+
+for(int i=0;i<number;++i)
+{
+xArray[i]=x+i*11.0f;
+yArray[i]=y;
+}
+
+instance.CreateObjectsByPosition(9791246,xArray,yArray,100);
+}
+
+void CreateBlockEffectByY(int number,float x,float y)
+{
+float[]xArray(number);
+float[]yArray(number);
+
+for(int i=0;i<number;++i)
+{
+xArray[i]=x;
+yArray[i]=y+i*19.0f;
+}
+
+instance.CreateObjectsByPosition(9791246,xArray,yArray,100);
+}
+
+void CreateBossBlockEffectByX(int number,float x,float y,int num)
+{
+float[]xArray(number);
+float[]yArray(number);
+
+
+for(int i=0;i<number;++i)
+{
+xArray[i]=x+i*11.0f;
+yArray[i]=y;
+}
+
+instance.CreateObjectsByPosition(9791246,xArray,yArray,100);
+
+for(int i=0;i<number/3.0f;++i)
+{
+xArray[i]=x+i*33.0f+11.0f;
+yArray[i]=y+num*13.0f;
+instance.CreateObjectByPosition(33706269,xArray[i],yArray[i],100);
+}
+}
+
+void CreateBossBlockEffectByY(int number,float x,float y,int num)
+{
+float[]xArray(number);
+float[]yArray(number);
+
+for(int i=0;i<number;++i)
+{
+xArray[i]=x;
+yArray[i]=y+i*19.0f;
+}
+
+instance.CreateObjectsByPosition(9791246,xArray,yArray,100);
+
+
+for(int i=0;i<number/1.5f;++i)
+{
+xArray[i]=x+num*13.0f;
+yArray[i]=y+i*28.5f+9.5f;
+instance.CreateObjectByPosition(33706269,xArray[i],yArray[i],100);
+}
+}
+
+
+void CreateAlliedObjects(int location,int type,int specialType)
+{
+float x;
+float x1;
+float y;
+float y2;
+int arrayType;
+
+AlliedObjectManager alliedObject;
+
+uint32[]npc(4);
+npc[0]=45752776;
+npc[1]=278870;
+npc[2]=46487358;
+npc[3]=53475704;
+
+x=locationXLength[location];
+y=locationYLength[location];
+x1=locationPositionX1[location];
+y2=locationPositionY2[location];
+switch(type)
+{
+case 0:
+arrayType=instance.GetRandomInt(10,28);
+break;
+case 1:
+arrayType=instance.GetRandomInt(12,20);
+break;
+case 2:
+arrayType=instance.GetRandomInt(10,12);
+break;
+case 3:
+arrayType=instance.GetRandomInt(20,28);
+break;
+}
+switch(specialType)
+{
+case 0:
+alliedObject.zero=instance.GetRandomInt(1,3);
+alliedObject.one=alliedObject.zero==1?(instance.GetRandomInt(0,2)==1?2:0):instance.GetRandomInt(0,2);
+alliedObject.two=(alliedObject.zero!=0&&alliedObject.one!=0)?0:((alliedObject.zero!=1&&alliedObject.one!=1)?1:2);
+break;
+case 1:
+case 2:
+alliedObject.zero=0;
+alliedObject.one=instance.GetRandomInt(1,3);
+alliedObject.two=alliedObject.one==1?2:1;
+case 3:
+alliedObject.zero=0;
+alliedObject.one=instance.GetRandomInt(1,3);
+alliedObject.two=alliedObject.one==1?2:1;
+
+break;
+}
+
+switch(arrayType)
+{
+case 0:
+CreateAlliedObject(alliedObject,specialType,2,x*1/10+x1,y*8/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*4/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*5/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*5/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*5/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,3,x*4/10+x1,y*5/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,2,x*1/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*4/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*5/10+x1,y*2/10+y2,0,1,1);
+break;
+case 1:
+CreateAlliedObject(alliedObject,specialType,1,x*5/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*6/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,2,x*9/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*6/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*6/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,3,x*6/10+x1,y*5/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*5/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*5/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,1,x*5/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*6/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,2,x*9/10+x1,y*2/10+y2,-1,1,1);
+break;
+case 2:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*7/10+x1,y*5/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*2/10+y2,0,1,1);
+break;
+case 3:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*3/10+x1,y*5/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*2/10+y2,0,1,1);
+break;
+case 4:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*5/10+x1,y*5/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*2/10+x1,y*3/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*8/10+x1,y*3/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*3/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*7/10+x1,y*2/10+y2,-1,1,1);
+break;
+case 5:
+CreateAlliedObject(alliedObject,specialType,1,x*3/10+x1,y*8/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*7/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*2/10+x1,y*7/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*8/10+x1,y*7/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*5/10+x1,y*5/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*5/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*2/10+y2,0,1,1);
+break;
+case 6:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*9/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*9/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*8/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*8/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*7/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*7/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*7/10+x1,y*7/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*6/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*4/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*3/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*3/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*2/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*2/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*1/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*1/10+y2,-1,1,1);
+break;
+case 7:
+CreateAlliedObject(alliedObject,specialType,0,x*6/10+x1,y*9/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*9/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*3/10+x1,y*7/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*7/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*7/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*6/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*4/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*3/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*3/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*1/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*4/10+x1,y*1/10+y2,1,1,1);
+break;
+case 8:
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*7/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*7/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,3,x*5/10+x1,y*7/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*6/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*6/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*5/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*5/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*5/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*5/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*3/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*3/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*3/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*3/10+y2,-1,0,1);
+break;
+case 9:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*7/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*3/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*3/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*1/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*1/10+y2,0,1,1);
+break;
+case 10:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*3/10+x1,y*1/10+y2,0,1,1);
+break;
+case 11:
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*3/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*2/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*1/10+y2,-1,1,1);
+break;
+case 12:
+CreateAlliedObject(alliedObject,specialType,0,x*1/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,3,x*7/10+x1,y*4/10+y2,-1,0,1);
+break;
+case 13:
+CreateAlliedObject(alliedObject,specialType,3,x*4/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,1,x*1/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,1,x*2/10+x1,y*2/10+y2,1,0,1);
+break;
+case 14:
+CreateAlliedObject(alliedObject,specialType,3,x*7/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*8/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*9/10+x1,y*7/10+y2,-1,0,1);
+break;
+case 15:
+CreateAlliedObject(alliedObject,specialType,1,x*2/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,1,x*9/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,3,x*8/10+x1,y*3/10+y2,-1,0,1);
+break;
+case 16:
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,3,x*2/10+x1,y*3/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*1/10+y2,0,1,1);
+break;
+case 17:
+CreateAlliedObject(alliedObject,specialType,3,x*8/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*7/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*1/10+y2,0,1,1);
+break;
+case 18:
+CreateAlliedObject(alliedObject,specialType,3,x*5/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*2/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,0,x*8/10+x1,y*2/10+y2,-1,1,1);
+break;
+case 19:
+CreateAlliedObject(alliedObject,specialType,3,x*8/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,0,x*3/10+x1,y*1/10+y2,0,1,1);
+break;
+case 20:
+CreateAlliedObject(alliedObject,specialType,6,x*3/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*3/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*3/10+y2,-1,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*1/10+y2,1,1,1);
+break;
+case 21:
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*9/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*8/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*6/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*6/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*4/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*6/10+x1,y*1/10+y2,0,1,1);
+break;
+case 22:
+CreateAlliedObject(alliedObject,specialType,6,x*7/10+x1,y*9/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*4/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*3/10+x1,y*1/10+y2,0,1,1);
+break;
+case 23:
+CreateAlliedObject(alliedObject,specialType,6,x*6/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*2/10+y2,1,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*2/10+y2,-1,1,1);
+break;
+case 24:
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*9/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*7/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*8/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*4/10+x1,y*8/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*2/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*5/10+x1,y*1/10+y2,0,1,1);
+break;
+case 25:
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*9/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*8/10+y2,-1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*5/10+x1,y*6/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*4/10+y2,1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*8/10+x1,y*1/10+y2,-1,1,1);
+break;
+case 26:
+CreateAlliedObject(alliedObject,specialType,6,x*2/10+x1,y*9/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*7/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*7/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*5/10+x1,y*6/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*3/10+x1,y*1/10+y2,0,1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*5/10+x1,y*1/10+y2,0,1,1);
+break;
+case 27:
+CreateAlliedObject(alliedObject,specialType,6,x*5/10+x1,y*9/10+y2,0,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*8/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*1/10+x1,y*7/10+y2,1,-1,1);
+CreateAlliedObject(alliedObject,specialType,6,x*9/10+x1,y*3/10+y2,-1,0,1);
+CreateAlliedObject(alliedObject,specialType,6,x*3/10+x1,y*1/10+y2,0,1,1);
+break;
+}
+}
+
+void CreateAlliedObject(AlliedObjectManager alliedObj,int specialType,int classType,float x,float y,int xd,int yd,int team)
+{
+uint32[]npc(10);
+
+
+
+npc[alliedObj.zero]=46487358;
+npc[alliedObj.one]=278870;
+npc[alliedObj.two]=45752776;
+npc[alliedObj.zero+3]=specialNpcHash;
+npc[alliedObj.one+3]=278870;
+npc[alliedObj.two+3]=48808341;
+
+npc[alliedObj.zero+7]=491691;
+npc[alliedObj.one+7]=44058003;
+npc[alliedObj.two+7]=62063009;
+
+switch(instance.GetRandomInt(0,4))
+{
+case 0:
+npc[6]=38777602;
+break;
+case 1:
+npc[6]=46862850;
+break;
+case 2:
+npc[6]=13898801;
+break;
+case 3:
+npc[6]=53475704;
+break;
+}
+switch(classType)
+{
+case 0:
+case 1:
+case 2:
+case 6:
+instance.CreateObjectByPositionD(npc[classType],x,y,xd,yd,team);
+if(specialType==3&&classType<3)
+{
+tempAlliedObject[tempAlliedObjectNum].hash=npc[classType+7];
+tempAlliedObject[tempAlliedObjectNum].x=x;
+tempAlliedObject[tempAlliedObjectNum].y=y;
+tempAlliedObject[tempAlliedObjectNum].xd=xd;
+tempAlliedObject[tempAlliedObjectNum].yd=yd;
+tempAlliedObjectNum++;
+}
+break;
+case 3:
+case 4:
+case 5:
+if(npc[classType]==specialNpcHash)
+{
+specialNPC[specialType]=instance.CreateNPCByPosD(specialNpcHash,x,y,xd,yd,1,0,0,0,1);
+instance.TimerRun(specialType+4,2.0f);
+instance.AddSpecifiedObjects(specialNPC[specialType]);
+instance.AddInterestObjectLocation(specialNPC[specialType],15.0f,true);
+}
+else instance.CreateObjectByPositionD(npc[classType],x,y,xd,yd,team);
+break;
+}
+}
+
+void PopNPCWithXY(float NPC_X1,float NPC_Y1,float NPC_X2,float NPC_Y2,int npcPopNum,int location)
+{
+
+TotalPopNum=TotalPopNum+npcPopNum;
+
+int cntTemp;
+cntTemp=0;
+if(cntTemp<npcPopNum)
+{
+++cntTemp;
+for(int i=0;i<npcPopNum;++i)
+{
+RoomNPC_X=instance.GetRandomInt(NPC_X1,NPC_X2);
+RoomNPC_Y=instance.GetRandomInt(NPC_Y1,NPC_Y2);
+switch(instance.GetRandomInt(0,5)){
+case 0:
+instance.CreateNPCByPos(58719743,RoomNPC_X,RoomNPC_Y,100,1,0,location,1);
+break;
+case 1:
+instance.CreateNPCByPos(14958186,RoomNPC_X,RoomNPC_Y,100,1,0,location,1);
+break;
+case 2:
+instance.CreateNPCByPos(1798672,RoomNPC_X,RoomNPC_Y,100,1,0,location,1);
+break;
+case 3:
+instance.CreateNPCByPos(62449197,RoomNPC_X,RoomNPC_Y,100,1,0,location,1);
+break;
+case 4:
+instance.CreateNPCByPos(26714605,RoomNPC_X,RoomNPC_Y,100,1,0,location,1);
+break;
+}
+instance.AddInterestObjects(58719743,true);
+instance.AddInterestObjects(14958186,true);
+instance.AddInterestObjects(1798672,true);
+instance.AddInterestObjects(62449197,true);
+instance.AddInterestObjects(26714605,true);
+
+
+}
+}
+
+}
+
+void BonusBox()
+{
+int bb=instance.GetRandomInt(0,100);
+
+uint32 bbox=0;
+
+
+if(bb<10)
+{
+instance.AddInterestObjects(11025279,true);
+bbox=11025279;
+}
+else if(bb<30)
+{
+instance.AddInterestObjects(18673514,true);
+bbox=18673514;
+}
+else
+{
+instance.AddInterestObjects(15498803,true);
+bbox=15498803;
+}
+instance.CreateObjectByPosition(bbox,1256.22f,961.5942f,100);
+instance.AddMinimapPing(0,1256,961,1);
+}ð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºð­ºî««««««««««««««««þîþîþîþîþîþîþîþ
